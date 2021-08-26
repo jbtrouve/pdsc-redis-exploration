@@ -1,0 +1,31 @@
+#!/bin/bash
+
+DBNAME=mycrdb
+
+declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
+
+for LOC in 1 2 3; do
+	. ./set-site-parameters $LOC >/dev/null
+	
+	U[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
+	P[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
+
+#	IP[$LOC]=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+#	FQDN[$LOC]=$(curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u "${U[$LOC]}:${P[$LOC]}" -H "Content-Type: application/json" | jq '.name' | tr -d '"'  )
+#	URL[$LOC]=https://$(kubectl get rec -o yaml | awk '$1 == "apiIngressUrl:" {print $NF}')
+#	INGRESS_DB_SUFFIX[$LOC]=$(kubectl get rec -o yaml | awk '$1 == "dbIngressSuffix:" {print $NF}')
+#
+#	REPL_EP[$LOC]=${DBNAME}${INGRESS_DB_SUFFIX[$LOC]}:443
+#	REPL_TLS_SNI[$LOC]=${DBNAME}${INGRESS_DB_SUFFIX[$LOC]}
+#
+#	echo "Reg.$LOC : IP=${IP[$LOC]} U=${U[$LOC]} P=${P[$LOC]} "
+# 	echo "        FQDN=${FQDN[$LOC]} URL=${URL[$LOC]}"
+#	echo "        REPLICATION_ENDPOINT= ${REPL_EP[$LOC]}"
+#	echo "        REPLICATION_TLS_SNI= ${REPL_TLS_SNI[$LOC]}"
+#	echo curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u \"${U[$LOC]}:${P[$LOC]}\" -H 'Content-Type: application/json' 
+
+	UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
+	UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
+	echo "UI is at:  https://$UI_IP:$UI_PORT    User= ${U[$LOC]}   Password= ${P[$LOC]}"
+done
+

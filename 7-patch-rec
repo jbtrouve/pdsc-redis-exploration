@@ -1,0 +1,34 @@
+. ./set-site-parameters $*
+
+IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+
+cat rec-$SITE.yaml >rec-$SITE-patch.yaml
+cat <<EOF  >>rec-$SITE-patch.yaml
+spec:
+  activeActive:
+    apiIngressUrl: api.$SITE.$IP.nip.io
+    dbIngressSuffix: -db.$SITE.$IP.nip.io
+    ingressAnnotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    method: ingress
+EOF
+
+kubectl apply -f rec-$SITE-patch.yaml
+
+echo "Sleep a bit for apply to finish (to be improved, need a criteria)"
+sleep 15
+
+U=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
+P=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
+
+set -x
+curl -k https://api.$SITE.$IP.nip.io/v1/bdbs -u "$U:$P" -H "Content-Type: application/json" | jq '.[]'
+set +x
+UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
+UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
+
+echo "UI is at:  https://$UI_IP:$UI_PORT    User= $U   Password= $P"
+### curl -L -v -k https://api.east.$IP.nip.io/v1/bdbs -u "demo@redislabs.com:$PASS" -H "Content-Type: application/json" | jq '.[]'
+

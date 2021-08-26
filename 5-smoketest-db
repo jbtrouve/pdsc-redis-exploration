@@ -1,0 +1,23 @@
+. ./set-site-parameters $*
+
+cat << EOF > /tmp/redis-enterprise-database.yml
+apiVersion: app.redislabs.com/v1alpha1
+kind: RedisEnterpriseDatabase
+metadata:
+  name: redis-enterprise-database
+spec:
+  memorySize: 100MB
+EOF
+
+kubectl apply -f /tmp/redis-enterprise-database.yml
+sleep 15
+
+kubectl exec -it rec-$SITE-0 -- rladmin status
+
+ENDPOINT=$(kubectl get redb/redis-enterprise-database -o yaml | grep host: | awk '{print $NF}')
+PORT=$(kubectl get redb/redis-enterprise-database -o yaml | grep port: | awk '{print $NF}')
+PASS=$(kubectl get secret redb-redis-enterprise-database -o jsonpath="{.data.password}" | base64 --decode)
+echo -e "\n\nNext command show out put PONG"
+set -x
+kubectl exec -it rec-$SITE-0 -- redis-cli -h $ENDPOINT -p $PORT -a $PASS PING
+

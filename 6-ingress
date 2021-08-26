@@ -1,0 +1,7 @@
+. ./set-site-parameters $*
+
+kubectl apply -f aws-eks-active-active/ingress-nginx-deploy.yaml
+echo "Wait for external IP ready"
+sleep 5
+watch -n 5 kubectl get all -n ingress-nginx
+

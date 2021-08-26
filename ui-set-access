@@ -1,0 +1,6 @@
+for LOC in 1 2 3; do
+	kubectl patch rec rec-$SITE --type merge --patch "{\"spec\":{\"uiServiceType\":\"LoadBalancer\"}}"
+done
+
+./show-access-info
+

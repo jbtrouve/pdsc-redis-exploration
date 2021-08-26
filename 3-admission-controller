@@ -1,0 +1,6 @@
+. ./set-site-parameters $*
+
+kubectl create -f aws-eks-active-active/admission.bundle.yaml
+echo "Wait for secret admission-tls"
+sleep 5
+watch -n 5 kubectl get secret admission-tls

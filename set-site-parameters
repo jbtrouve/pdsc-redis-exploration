@@ -1,0 +1,6 @@
+. ./init-cluster-vars
+
+# set -x
+gcloud container clusters get-credentials $CLUSTER --zone=$ZONE
+kubectl config set-context --current --namespace=redis
+

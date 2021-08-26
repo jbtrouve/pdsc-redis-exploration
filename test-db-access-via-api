@@ -1,0 +1,9 @@
+. ./set-site-parameters $*
+
+IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+U=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
+P=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
+
+set -x
+curl -k https://api.$SITE.$IP.nip.io/v1/bdbs -u "$U:$P" -H "Content-Type: application/json" | jq '.[]'
+

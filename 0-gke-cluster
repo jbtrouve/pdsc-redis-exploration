@@ -1,0 +1,14 @@
+. ./init-cluster-vars
+
+set -x
+
+gcloud container clusters create $CLUSTER \
+  --machine-type e2-standard-4 \
+  --num-nodes 1 \
+  --zone $ZONE \
+  --cluster-version latest \
+  --node-locations=$LOCATIONS \
+  --release-channel=regular \
+  --no-enable-cloud-monitoring \
+  --no-enable-cloud-logging \
+  --disk-size=100GB

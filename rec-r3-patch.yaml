@@ -1,0 +1,26 @@
+apiVersion: app.redislabs.com/v1
+kind: RedisEnterpriseCluster
+metadata:
+  name: rec-r3
+spec:
+  # Add fields here
+  nodes: 3
+  uiServiceType: LoadBalancer
+  license: |
+    ----- LICENSE START ----- 
+    DwxfFQf+FFnIU3CdEkhRdv/NIXYKNHKWtDyhnKlow04myPV/1LE7exX8Tpfr
+    PVJ1C/468nC3VE8azxjRNVzOmPPS0ediNCjm9g5W1yikHtK7dbdAM2yeOaCV
+    qYi/pOj/Mhg8wFPoNrLobK4nJEwfd3pYf/5TNZf34Bj/hiBySEylXI/TMVqJ
+    KQNxHuM0r4apgmRB0RoJ86LZlA6Mqtli+u9mWCr1GRyp+L/sBFYsQGfb1UDf
+    ICfYYN8igbWVg6X8/aEy8oSf9W/Paz3kAKRb3GMPB35v11hWZ3wd/73vJ5B2
+    AHUTQQDrWPwxPRe09DO63LoLlUEXuCqO9fedKBT4/Q==
+    ----- LICENSE END -----
+spec:
+  activeActive:
+    apiIngressUrl: api.r3.35.243.234.234.nip.io
+    dbIngressSuffix: -db.r3.35.243.234.234.nip.io
+    ingressAnnotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    method: ingress
