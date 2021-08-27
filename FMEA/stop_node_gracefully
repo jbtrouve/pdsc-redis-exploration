@@ -1,0 +1,32 @@
+#!/bin/bash
+
+REGION=$1
+#KNODE=$2
+
+[[ $REGION = "" ]] && echo "Usage: $0 region# " && exit 1
+# [[ $KNODE = "" ]] && echo "Usage: $0 region# node" && exit 1
+
+./set-site-parameters $REGION
+kubectl get nodes
+echo -n "Copy/paste a node name and enter here:" ; read KNODE
+kubectl get nodes $KNODE -o yaml
+exit
+
+set -x
+kubectl get nodes
+kubectl cordon my-node $KNODE
+kubectl get nodes
+kubectl top nodes
+set +x
+echo "Press a key..." ; read dummy
+
+##k get pods  -o yaml | egrep 'nodeName:|r1-1'
+
+##kubectl exec -it rec-r1-0 -- /bin/bash
+##rladmin node 3 maintenance_mode on
+
+
+set -x
+kubectl drain my-node $KNODE
+kubectl get nodes
+kubectl top nodes
