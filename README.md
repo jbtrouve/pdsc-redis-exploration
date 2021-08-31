@@ -40,8 +40,11 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 ### Configure Ingress
     ./6-ingress 1
 
-### Configure public IP
+### Configure public IP for cluster-to-cluster replication
     ./7-patch-rec 1
+
+### Configure public IP for web UI
+    ./8-ui-lb 1
 
 ## Build region 2
 
@@ -53,6 +56,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     ./5-smoketest-db 2
     ./6-ingress 2
     ./7-patch-rec 2
+    ./8-ui-lb 2
 ## Build region 3
 
     ./0-gke-cluster 3
@@ -63,9 +67,10 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     ./5-smoketest-db 3
     ./6-ingress 3
     ./7-patch-rec 3
-## Configure active-active REDB (regions 1, 2 and 3)
+    ./8-ui-lb 3
+## Show commands to configure active-active REDB (regions 1, 2 and 3)
 
-    ./8-act-act-db
+    ./9-act-act-db
 
 ## Test DB access
 

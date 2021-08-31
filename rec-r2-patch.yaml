@@ -5,7 +5,7 @@ metadata:
 spec:
   # Add fields here
   nodes: 3
-  uiServiceType: LoadBalancer
+  # uiServiceType: LoadBalancer
   license: |
     ----- LICENSE START ----- 
     DwxfFQf+FFnIU3CdEkhRdv/NIXYKNHKWtDyhnKlow04myPV/1LE7exX8Tpfr
@@ -17,8 +17,8 @@ spec:
     ----- LICENSE END -----
 spec:
   activeActive:
-    apiIngressUrl: api.r2.34.130.50.84.nip.io
-    dbIngressSuffix: -db.r2.34.130.50.84.nip.io
+    apiIngressUrl: api.r2.34.130.42.227.nip.io
+    dbIngressSuffix: -db.r2.34.130.42.227.nip.io
     ingressAnnotations:
       kubernetes.io/ingress.class: nginx
       nginx.ingress.kubernetes.io/backend-protocol: HTTPS

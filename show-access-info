@@ -7,10 +7,14 @@ LOCS="1 2 3"
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
 for LOC in $LOCS; do
-	. ./set-site-parameters $LOC >/dev/null
+	. ./set-site-parameters $LOC >/dev/null 2>&1
 	
 	U[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
 	P[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
+
+	UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
+	UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
+	echo "UI is at:  https://$UI_IP:$UI_PORT    User= ${U[$LOC]}   Password= ${P[$LOC]}"
 
 #	IP[$LOC]=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
 #	FQDN[$LOC]=$(curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u "${U[$LOC]}:${P[$LOC]}" -H "Content-Type: application/json" | jq '.name' | tr -d '"'  )
@@ -25,9 +29,5 @@ for LOC in $LOCS; do
 #	echo "        REPLICATION_ENDPOINT= ${REPL_EP[$LOC]}"
 #	echo "        REPLICATION_TLS_SNI= ${REPL_TLS_SNI[$LOC]}"
 #	echo curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u \"${U[$LOC]}:${P[$LOC]}\" -H 'Content-Type: application/json' 
-
-	UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
-	UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
-	echo "UI is at:  https://$UI_IP:$UI_PORT    User= ${U[$LOC]}   Password= ${P[$LOC]}"
 done
 

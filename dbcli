@@ -1,15 +1,15 @@
-. ./set-site-parameters $*
+#!/bin/bash
 
-ENDPOINT=$(kubectl get redb/redis-enterprise-database -o yaml | grep host: | awk '{print $NF}')
-PORT=$(kubectl get redb/redis-enterprise-database -o yaml | grep port: | awk '{print $NF}')
-PASS=$(kubectl get secret redb-redis-enterprise-database -o jsonpath="{.data.password}" | base64 --decode)
-echo -e "\n\n"
+LOCS="1 2 3"
+[[ $1 = "" ]] || LOCS=$1
 
-echo "kubectl exec -it rec-$SITE-0 -- redis-cli -h $ENDPOINT -p $PORT -a $PASS PING"
+for LOC in $LOCS; do
+	. ./set-site-parameters $LOC >/dev/null 2>&1
 
-IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
-U=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
-P=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
+	ENDPOINT=$(kubectl get redb/redis-enterprise-database -o yaml | grep host: | awk '{print $NF}')
+	PORT=$(kubectl get redb/redis-enterprise-database -o yaml | grep port: | awk '{print $NF}')
+	PASS=$(kubectl get secret redb-redis-enterprise-database -o jsonpath="{.data.password}" | base64 --decode)
 
-echo "curl -k https://api.$SITE.$IP.nip.io/v1/bdbs -u \"$U:$P\" -H \"Content-Type: application/json\" | jq '.[]'"
+	echo "kubectl exec -it rec-$SITE-0 -- redis-cli -h $ENDPOINT -p $PORT -a $PASS PING"
 
+done

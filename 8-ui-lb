@@ -1,0 +1,5 @@
+. ./set-site-parameters $*
+
+kubectl patch rec rec-$SITE --type merge --patch "{\"spec\":{\"uiServiceType\":\"LoadBalancer\"}}"
+
+kubectl get service rec-$SITE-ui --watch

@@ -24,8 +24,8 @@ kubectl apply -f rec-$SITE.yaml
 echo "Takes about 2 min to reach Initializing state..."
 echo "            5 min to reach Runnning state..."
 
+sleep 10	# must wait a bit before next line
 kubectl rollout status sts rec-$SITE --namespace=redis
 
 # # To get more details during rollout
-# sleep 10
 # kubectl get rec --watch
