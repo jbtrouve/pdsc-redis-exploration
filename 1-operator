@@ -5,6 +5,8 @@ set -x
 kubectl create namespace redis
 kubectl config set-context --current --namespace=redis
 kubectl apply -f bundle.yaml
-sleep 5
-watch -n 5 kubectl get deployment
 
+kubectl rollout status deployment redis-enterprise-operator --namespace=redis
+
+# sleep 5
+# watch -n 5 kubectl get deployment

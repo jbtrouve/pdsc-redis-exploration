@@ -5,7 +5,7 @@ metadata:
 spec:
   # Add fields here
   nodes: 3
-  uiServiceType: LoadBalancer
+  # uiServiceType: LoadBalancer
   license: |
     ----- LICENSE START ----- 
     DwxfFQf+FFnIU3CdEkhRdv/NIXYKNHKWtDyhnKlow04myPV/1LE7exX8Tpfr

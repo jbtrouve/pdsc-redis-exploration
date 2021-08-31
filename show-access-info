@@ -1,10 +1,12 @@
 #!/bin/bash
 
 DBNAME=mycrdb
+LOCS="1 2 3"
+[[ $1 = "" ]] || LOCS=$1
 
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
-for LOC in 1 2 3; do
+for LOC in $LOCS; do
 	. ./set-site-parameters $LOC >/dev/null
 	
 	U[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
