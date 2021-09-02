@@ -10,5 +10,8 @@ for LOC in 1 2 3; do
 #	URL[$LOC]=https://$(kubectl get rec -o yaml | awk '$1 == "apiIngressUrl:" {print $NF}')
 #	INGRESS_DB_SUFFIX[$LOC]=$(kubectl get rec -o yaml | awk '$1 == "dbIngressSuffix:" {print $NF}')
 
-	echo "A-A ingress IP: $IP   Host for DB client: $DBNAME-db.$SITE.$IP.nip.io"
+    SNI="$DBNAME-db.$SITE.$IP.nip.io"
+	echo "A-A ingress IP: $IP   Host for DB client: $SNI"
+    echo "CLI:  redis-cli -h $SNI -p 443 -a mycrdb --tls --sni $SNI --cacert cert_$SITE.pem"
+    echo "M_B:  memtier_benchmark -s $SNI -p 443 -a mycrdb --tls --sni $SNI --cacert cert_r1.pem -R -n allkeys -d 2500 -R 16 --key-pattern=P:P --ratio=1:0"
 done
