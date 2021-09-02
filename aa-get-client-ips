@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DBNAME=mycrdb
+
+for LOC in 1 2 3; do
+	. ./set-site-parameters $LOC >/dev/null 2>&1
+	IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+
+#	FQDN[$LOC]=$(curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u "${U[$LOC]}:${P[$LOC]}" -H "Content-Type: application/json" | jq '.name' | tr -d '"'  )
+#	URL[$LOC]=https://$(kubectl get rec -o yaml | awk '$1 == "apiIngressUrl:" {print $NF}')
+#	INGRESS_DB_SUFFIX[$LOC]=$(kubectl get rec -o yaml | awk '$1 == "dbIngressSuffix:" {print $NF}')
+
+	echo "A-A ingress IP: $IP"
+done

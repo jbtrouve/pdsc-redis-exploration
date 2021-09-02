@@ -5,7 +5,7 @@ DBNAME=mycrdb
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
 for LOC in 1 2 3; do
-	. ./set-site-parameters $LOC
+	. ./set-site-parameters $LOC >/dev/null 2>&1
 	IP[$LOC]=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
 	U[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
 	P[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decode)
@@ -23,15 +23,14 @@ for LOC in 1 2 3; do
 	echo curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u \"${U[$LOC]}:${P[$LOC]}\" -H 'Content-Type: application/json' 
 done
 
-CMD="crdb-cli crdb create --name $DBNAME --memory-size 100m --encryption yes --causal-consistency true  --shards-count 5 --replication true \
+CMD="crdb-cli crdb create --name $DBNAME --password $DBNAME --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true \
  --instance fqdn=${FQDN[1]},url=${URL[1]},username=${U[1]},password=${P[1]},replication_endpoint=${REPL_EP[1]},replication_tls_sni=${REPL_TLS_SNI[1]} \
  --instance fqdn=${FQDN[2]},url=${URL[2]},username=${U[2]},password=${P[2]},replication_endpoint=${REPL_EP[2]},replication_tls_sni=${REPL_TLS_SNI[2]} \
  --instance fqdn=${FQDN[3]},url=${URL[3]},username=${U[3]},password=${P[3]},replication_endpoint=${REPL_EP[3]},replication_tls_sni=${REPL_TLS_SNI[3]} "
 
-. ./set-site-parameters 1
 echo "Run this:
-  . ./set-site-parameters 1
-  kubectl exec -it rec-$SITE-0 -- /bin/bash
-    rladmin tune cluster default_shards_placement sparse
-    $CMD"
-
+. ./set-site-parameters 1  >/dev/null 2>&1
+set -x 
+kubectl exec -it rec-$SITE-0 -- rladmin tune cluster default_shards_placement sparse
+kubectl exec -it rec-$SITE-0 -- $CMD
+"

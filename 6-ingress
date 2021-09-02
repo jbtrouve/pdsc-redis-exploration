@@ -4,5 +4,3 @@ kubectl apply -f aws-eks-active-active/ingress-nginx-deploy.yaml
 echo "Wait for external IP ready"
 sleep 5
 watch -n 5 kubectl get all -n ingress-nginx
-
-memtier_benchmark -s redis-10312.rec-r1.redis.svc.cluster.local -p 10312 -R -n allkeys -d 2500 -R 16 --key-pattern=P:P --ratio=1:0 -a rNAUC114

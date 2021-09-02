@@ -1,0 +1,15 @@
+#!/bin/bash
+
+LOCS="1 2 3"
+[[ $1 = "" ]] || LOCS=$1
+
+for LOC in $LOCS; do
+	. ./set-site-parameters $LOC >/dev/null 2>&1
+
+	ENDPOINT=$(kubectl get redb/mycrdb -o yaml | grep host: | awk '{print $NF}')
+	PORT=$(kubectl get redb/mycrdb -o yaml | grep port: | awk '{print $NF}')
+	PASS=$(kubectl get secret redb-mycrdb -o jsonpath="{.data.password}" | base64 --decode)
+
+	echo "kubectl exec -it rec-$SITE-0 -- redis-cli -h $ENDPOINT -p $PORT -a $PASS PING"
+
+done

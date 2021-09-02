@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-data
+  labels:
+    app: redis-data
+spec:
+  selector:
+    #make sure this matches the labels of your  pods - use "kubectl get pods --show-labels -n <namespace>" to check
+    redis.io/bdb-3: "3"
+  ports:
+  - protocol: "TCP"
+    port: 12623
+    name: redis-data
+  type: LoadBalancer
