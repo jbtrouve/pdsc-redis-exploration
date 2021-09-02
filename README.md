@@ -72,7 +72,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 
     ./9-act-act-db
 
-## Test DB access
+## Test DB access (from server containers themselves)
 
     . ./set-site-parameters 1
     kubectl exec -it rec-$SITE-0 -- /bin/bash
@@ -86,5 +86,33 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     . ./set-site-parameters 2   # Region 2
     kubectl exec -it rec-$SITE-0 -- /bin/bash
     . . .  same as above
+
+## Prepare for external access
+### Get UI coordinates for each cluster
+    ./show-ui-access-info
+### From UI, change DB parameters for client SSL communication. 
+
+**For each Redis cluster** , from UI:
+- top menu: databases
+- click on database _mycrdb_
+- click tab _configuration_
+- click _Edit_ button at bottom of page
+- Section TLS: select _Require TLS for All Communications_
+- Section TLS: UNcheck _Enforce client authentication_
+- click _Update_ button at bottom of page
+
+### From UI, obtain client certificate. 
+**For each Redis cluster** , from UI:
+- top menu: settings
+- click tab _general_
+- section _Proxy Certificate_ : copy contents including BEGIN and END lines
+
+### Use sample python program to test data access
+- run ./aa-get-client-info to get hostanames to use
+- find Linux VM with python and redis module
+- copy certificates in files called cert_r1.pem , cert_r2.pem , etc
+- copy *sample_db_access.py* program there
+- adjust program hostnames obtained above (and cert file names, if needed)
+- run program:  python2 sample_db_access.py
 
 The End.
