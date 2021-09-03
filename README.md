@@ -108,7 +108,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 - section _Proxy Certificate_ : copy contents including BEGIN and END lines
 
 ## Use sample python program to test data access
-- run ./aa-get-client-info to get hostanames to use
+- run *./aa-get-client-info* to get hostanames to use
 - find Linux VM with python and redis module
 - copy CA certificates in files called cert_r1.pem , cert_r2.pem , etc
 - copy *sample_db_access.py* program there
@@ -129,5 +129,18 @@ On the GKE cluster where Redis DB is hosted:
 ### Run memtier_benchmark (sample for a quick test)
     memtier_benchmark -s mycrdb-db.r1.34.152.54.45.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.54.45.nip.io --cacert cert_r1.pem -R -n 2000 -d 250 -R 16 --key-pattern=P:P --ratio=1:10
     memtier_benchmark --help   # to explain parameters
+
+## Use a container to run FMEA tests 
+On the GKE cluster where Redis DB is hosted:
+- deploy a container with image redislabs/redis, name it redis-client
+- identify pods named redis-client
+- connect to one pod with:  kubectl exec -it redis-client-xyz-abc -- bash
+- copy *produce-activity.py* to /tmp (on the pod)
+- copy CA certificate files to /tmp
+- run sample program (use -u if piping to _tee_ ):
+    python -u produce-activity.py | tee activity.out
+
+In another session on the same pod, run memtier_benchmark; use output of *aa-get-client-info* to get the proper IPs.  In our case 2 runs at 5000 reps (* 4 threadstakes about 1 minute.
+    memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
 
 The End.
