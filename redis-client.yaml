@@ -1,0 +1,41 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "redis-client"
+  namespace: "redis"
+  labels:
+    app: "redis-client"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "redis-client"
+  template:
+    metadata:
+      labels:
+        app: "redis-client"
+    spec:
+      containers:
+      - name: "redis-1"
+        image: "redislabs/redis:latest"
+---
+apiVersion: "autoscaling/v2beta1"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "redis-client-hpa-mds0"
+  namespace: "redis"
+  labels:
+    app: "redis-client"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "redis-client"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      targetAverageUtilization: 80

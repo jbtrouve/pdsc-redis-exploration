@@ -4,6 +4,8 @@ DBNAME=mycrdb
 
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
+CMD="crdb-cli crdb create --name $DBNAME --password $DBNAME --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true "
+
 for LOC in 1 2 ; do
 	. ./set-site-parameters $LOC >/dev/null 2>&1
 	IP[$LOC]=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
@@ -21,17 +23,17 @@ for LOC in 1 2 ; do
 	echo "        REPLICATION_ENDPOINT= ${REPL_EP[$LOC]}"
 	echo "        REPLICATION_TLS_SNI= ${REPL_TLS_SNI[$LOC]}"
 	echo curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u \"${U[$LOC]}:${P[$LOC]}\" -H 'Content-Type: application/json' 
+
+    CMD="$CMD --instance fqdn=${FQDN[$LOC]},url=${URL[$LOC]},username=${U[$LOC]},password=${P[$LOC]},replication_endpoint=${REPL_EP[$LOC]},replication_tls_sni=${REPL_TLS_SNI[$LOC]}"
 done
 
-CMD="crdb-cli crdb create --name $DBNAME --password $DBNAME --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true \
- --instance fqdn=${FQDN[1]},url=${URL[1]},username=${U[1]},password=${P[1]},replication_endpoint=${REPL_EP[1]},replication_tls_sni=${REPL_TLS_SNI[1]} \
- --instance fqdn=${FQDN[2]},url=${URL[2]},username=${U[2]},password=${P[2]},replication_endpoint=${REPL_EP[2]},replication_tls_sni=${REPL_TLS_SNI[2]} \
- --instance fqdn=${FQDN[3]},url=${URL[3]},username=${U[3]},password=${P[3]},replication_endpoint=${REPL_EP[3]},replication_tls_sni=${REPL_TLS_SNI[3]} \
- "
+SCRIPT=go-build-aa-database
+echo -e "
+. ./set-site-parameters 1  >/dev/null 2>&1
+set -x
+kubectl exec -it rec-r1-0 -- rladmin tune cluster default_shards_placement sparse
+kubectl exec -it rec-r1-0 -- $CMD
+" | tee $SCRIPT
+chmod +x $SCRIPT
 
-. ./set-site-parameters 1  >/dev/null 2>&1
-echo -e "\n\nRun this:\n
-. ./set-site-parameters 1  >/dev/null 2>&1
-kubectl exec -it rec-$SITE-0 -- rladmin tune cluster default_shards_placement sparse
-kubectl exec -it rec-$SITE-0 -- $CMD
-"
+echo -e "\n\nRun ./go-build-aa-database "
