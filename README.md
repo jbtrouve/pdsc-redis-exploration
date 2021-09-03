@@ -141,6 +141,7 @@ On the GKE cluster where Redis DB is hosted:
     python -u produce-activity.py | tee activity.out
 
 In another session on the same pod, run memtier_benchmark; use output of *aa-get-client-info* to get the proper IPs.  In our case 2 runs at 5000 reps (* 4 threadstakes about 1 minute.
+
     memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
 
 The End.
