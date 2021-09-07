@@ -1,0 +1,2 @@
+POD=$(kubectl get pods | awk '$1 ~ /^redis-client-/ {print $1}')
+kubectl exec -it $POD -- bash

@@ -131,13 +131,31 @@ On the GKE cluster where Redis DB is hosted:
     memtier_benchmark --help   # to explain parameters
 
 ## Use a container to run FMEA tests 
-On the GKE cluster where Redis DB is hosted:
-- deploy a container with image redislabs/redis, name it redis-client
-- identify pods named redis-client
-- connect to one pod with:  kubectl exec -it redis-client-xyz-abc -- bash
-- copy *produce-activity.py* to /tmp (on the pod)
-- copy CA certificate files to /tmp
-- run sample program (use -u if piping to _tee_ ):
+Get names of the active-active databases (see "Host for DB client")
+
+    ./aa-get-client-info
+
+On the GKE cluster where Redis DB is hosted, deploy a container with image redislabs/redis
+
+    kubectl apply -f redis-client.yaml -n redis
+
+Connect to new container
+
+    ./connect-to-client
+
+Copy _produce-activity.py_ to /tmp (on the client container)
+
+    curl https://raw.githubusercontent.com/jbtrouve/pdsc-redis-exploration/main/produce-activity.py >produce-activity.py
+
+Adjust name of databases
+
+    vi produce-activity.pl
+       # Change all mycrdb-db.r2.NN.NN.NN.NN.nip.io  to the proper _Host for DB client_
+
+Copy CA certificate files to /tmp
+
+Run sample program (use -u if piping to _tee_ ):
+
     python -u produce-activity.py | tee activity.out
 
 In another session on the same pod, run memtier_benchmark; use output of *aa-get-client-info* to get the proper IPs.  In our case 2 runs at 5000 reps (* 4 threadstakes about 1 minute.

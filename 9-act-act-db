@@ -36,4 +36,4 @@ kubectl exec -it rec-r1-0 -- $CMD
 " | tee $SCRIPT
 chmod +x $SCRIPT
 
-echo -e "\n\nRun ./go-build-aa-database "
+echo -e "\n\nRun ./$SCRIPT "

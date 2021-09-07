@@ -12,7 +12,8 @@ for LOC in 1 2 3; do
 
     SNI="$DBNAME-db.$SITE.$IP.nip.io"
 	echo "A-A ingress IP: $IP   Host for DB client: $SNI"
-    echo "CLI:  redis-cli -h $SNI -p 443 -a mycrdb --tls --sni $SNI --cacert cert_$SITE.pem"
+    echo "CLI:  kubectl exec -it rec-$SITE-0 -- bash"
+    echo "      redis-cli -h $SNI -p 443 -a mycrdb --tls --sni $SNI --cacert cert_$SITE.pem"
     echo "Following memtier_benchmark runs in about 1 minute (change --run_count or -n for more/less):"
     echo "M_B:  memtier_benchmark -s $SNI -p 443 -a mycrdb --tls --sni $SNI --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2"
     echo ""
