@@ -1,0 +1,11 @@
+NODE=$1
+OUTFILE=$2
+
+[[ $OUTFILE = "" ]] && echo "Usage: $0 0|1|2 output_file" && exit 1
+
+>$OUTFILE
+while true; do
+	date +"TS= %Y-%m-%d %H:%M:%S" | tee -a $OUTFILE
+	kubectl exec -it rec-r1-$NODE -- rladmin status | tee -a $OUTFILE
+	sleep 2
+done

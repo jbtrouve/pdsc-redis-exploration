@@ -8,6 +8,8 @@ import time
 import redis
 from datetime import datetime
 
+sleep_time = 0.1
+
 server_1 = redis.Redis(host='mycrdb-db.r1.34.152.11.67.nip.io',
                     port=443,
                     password='mycrdb',
@@ -41,7 +43,7 @@ for xx in range(500):
     except:
       set_status_1 = "set_1:ERROR"
 
-    time.sleep(1.0)
+    time.sleep(sleep_time)
 
     try:
       value_from_2 = server_2.get(key1)
@@ -80,7 +82,7 @@ for xx in range(500):
     except:
       set_status_2 = "set_2:ERROR"
 
-    time.sleep(0.5)
+    time.sleep(sleep_time)
 
     try:
       value_from_1 = server_1.get(key1)
