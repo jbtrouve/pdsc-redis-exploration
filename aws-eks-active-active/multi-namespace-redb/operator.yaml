@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-enterprise-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: redis-enterprise-operator
+  template:
+    metadata:
+      labels:
+        name: redis-enterprise-operator
+    spec:
+      serviceAccountName: redis-enterprise-operator
+      containers:
+        - name: redis-enterprise-operator
+          image: redislabs/operator:6.0.20-4
+          command:
+          - redis-enterprise-operator
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "redis-enterprise-operator"
+            - name: DATABASE_CONTROLLER_ENABLED
+              value: "true"
+            - name: REDB_NAMESPACES
+              value: "COMMA,DELIMITED,CONSUMER_NAMESPACE_LIST_TO_WATCH"
+          resources:
+            limits:
+              cpu: 4000m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 256Mi

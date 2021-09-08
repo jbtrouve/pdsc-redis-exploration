@@ -1,0 +1,15 @@
+apiVersion: app.redislabs.com/v1
+kind: RedisEnterpriseCluster
+metadata:
+  name: rec
+spec:
+  # Add fields here
+  activeActive:
+    apiIngressUrl: api.east.100.26.91.141.nip.io
+    dbIngressSuffix: -db.east.100.26.91.141.nip.io
+    ingressAnnotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    method: ingress
+  nodes: 3
