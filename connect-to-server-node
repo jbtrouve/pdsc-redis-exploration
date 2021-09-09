@@ -1,3 +1,6 @@
 NODE=$1
 [[ $NODE = "" ]] && echo "Usage: $0 0|1|2" && exit 1
-kubectl exec -it rec-r1-$NODE -- bash
+
+POD_PREFIX=$(kubectl get pods | awk '$1 ~ /^rec-r.-[0-9]$/ {print substr($1,1,6);exit} ')
+set -x
+kubectl exec -it ${POD_PREFIX}-$NODE -- bash

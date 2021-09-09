@@ -1,0 +1,2 @@
+. ./set-site-parameters 1
+kubectl apply -f redis-client.yaml
