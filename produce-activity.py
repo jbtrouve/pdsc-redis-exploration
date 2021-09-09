@@ -88,10 +88,10 @@ for xx in range(500):
       value_from_1 = server_1.get(key1)
       if not value_from_1:
         value_from_1 = ""
-      get_status_1 = "get_2:OK   "
+      get_status_1 = "get_1:OK   "
     except:
       value_from_1 = "???"
-      get_status_1 = "get_2:ERROR"
+      get_status_1 = "get_1:ERROR"
 
     if value_from_1 == "???":
       value_diag_1 = "**no_value**"
