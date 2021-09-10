@@ -1,0 +1,14 @@
+#!/bin/bash
+
+LOCS="1 2 3"
+[[ $1 = "" ]] || LOCS=$1
+
+CERT_FILE=/etc/opt/redislabs/proxy_cert.pem
+
+for LOC in $LOCS; do
+	. ./set-site-parameters $LOC >/dev/null 2>&1
+	
+	echo -e "\nRedis cluster $LOC - Proxy cert for client access"
+	kubectl exec -it rec-$SITE-0 -- cat $CERT_FILE
+done
+

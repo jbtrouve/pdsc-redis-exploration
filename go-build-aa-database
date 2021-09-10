@@ -1,6 +1,13 @@
+# This is a generated script
+    . ./set-site-parameters 1  >/dev/null 2>&1
+    set -x
+    kubectl exec -it rec-r1-0 -- rladmin tune cluster default_shards_placement sparse
+    set +x
+    . ./set-site-parameters 2  >/dev/null 2>&1
+    set -x
+    kubectl exec -it rec-r2-0 -- rladmin tune cluster default_shards_placement sparse
+    set +x
 
 . ./set-site-parameters 1  >/dev/null 2>&1
-set -x
-kubectl exec -it rec-r1-0 -- rladmin tune cluster default_shards_placement sparse
-kubectl exec -it rec-r1-0 -- crdb-cli crdb create --name mycrdb --password mycrdb --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true  --instance fqdn=rec-r1.redis.svc.cluster.local,url=https://api.r1.34.152.23.171.nip.io,username=demo@redislabs.com,password=9NQ7vNps,replication_endpoint=mycrdb-db.r1.34.152.23.171.nip.io:443,replication_tls_sni=mycrdb-db.r1.34.152.23.171.nip.io --instance fqdn=rec-r2.redis.svc.cluster.local,url=https://api.r2.34.124.112.169.nip.io,username=demo@redislabs.com,password=fJcGWyfv,replication_endpoint=mycrdb-db.r2.34.124.112.169.nip.io:443,replication_tls_sni=mycrdb-db.r2.34.124.112.169.nip.io
+kubectl exec -it rec-r1-0 -- crdb-cli crdb create --name mycrdb --password mycrdb --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true  --instance fqdn=rec-r1.redis.svc.cluster.local,url=https://api.r1.34.152.54.45.nip.io,username=demo@redislabs.com,password=yJlPfXxR,replication_endpoint=mycrdb-db.r1.34.152.54.45.nip.io:443,replication_tls_sni=mycrdb-db.r1.34.152.54.45.nip.io --instance fqdn=rec-r2.redis.svc.cluster.local,url=https://api.r2.34.130.50.84.nip.io,username=demo@redislabs.com,password=QCSHZmvc,replication_endpoint=mycrdb-db.r2.34.130.50.84.nip.io:443,replication_tls_sni=mycrdb-db.r2.34.130.50.84.nip.io
 

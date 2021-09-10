@@ -6,6 +6,6 @@ OUTFILE=$2
 >$OUTFILE
 while true; do
 	date +"TS= %Y-%m-%d %H:%M:%S" | tee -a $OUTFILE
-	kubectl exec -it rec-r1-$NODE -- rladmin status | tee -a $OUTFILE
-	sleep 20
+	kubectl exec -it rec-r1-$NODE -- rladmin status nodes | tee -a $OUTFILE
+	sleep 4
 done

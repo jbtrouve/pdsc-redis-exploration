@@ -4,6 +4,9 @@ DBNAME=mycrdb
 
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
+SCRIPT=go-build-aa-database
+echo "# This is a generated script" >$SCRIPT
+
 CMD="crdb-cli crdb create --name $DBNAME --password $DBNAME --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true "
 
 for LOC in 1 2 ; do
@@ -25,15 +28,18 @@ for LOC in 1 2 ; do
 	echo curl -s -k https://api.$SITE.${IP[$LOC]}.nip.io/v1/cluster -u \"${U[$LOC]}:${P[$LOC]}\" -H 'Content-Type: application/json' 
 
     CMD="$CMD --instance fqdn=${FQDN[$LOC]},url=${URL[$LOC]},username=${U[$LOC]},password=${P[$LOC]},replication_endpoint=${REPL_EP[$LOC]},replication_tls_sni=${REPL_TLS_SNI[$LOC]}"
+
+    echo "    . ./set-site-parameters $LOC  >/dev/null 2>&1
+    set -x
+    kubectl exec -it rec-r${LOC}-0 -- rladmin tune cluster default_shards_placement sparse
+    set +x" >>$SCRIPT
+
 done
 
-SCRIPT=go-build-aa-database
 echo -e "
 . ./set-site-parameters 1  >/dev/null 2>&1
-set -x
-kubectl exec -it rec-r1-0 -- rladmin tune cluster default_shards_placement sparse
 kubectl exec -it rec-r1-0 -- $CMD
-" | tee $SCRIPT
+" >> $SCRIPT
 chmod +x $SCRIPT
 
 echo -e "\n\nRun ./$SCRIPT "
