@@ -25,10 +25,11 @@ P=$(kubectl get secret rec-$SITE -o jsonpath='{.data.password}' | base64 --decod
 
 set -x
 curl -k https://api.$SITE.$IP.nip.io/v1/bdbs -u "$U:$P" -H "Content-Type: application/json" | jq '.[]'
-set +x
-UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
-UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
 
-echo "UI is at:  https://$UI_IP:$UI_PORT    User= $U   Password= $P"
+### set +x
+### UI_IP=$(kubectl get service/rec-$SITE-ui -o yaml | grep ip: | awk '{print $NF}')
+### UI_PORT=$(kubectl get service/rec-$SITE-ui -o yaml | grep port: | awk '{print $NF}')
+
+### echo "UI is at:  https://$UI_IP:$UI_PORT    User= $U   Password= $P"
 ### curl -L -v -k https://api.east.$IP.nip.io/v1/bdbs -u "demo@redislabs.com:$PASS" -H "Content-Type: application/json" | jq '.[]'
 

@@ -68,9 +68,63 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     ./6-ingress 3
     ./7-patch-rec 3
     ./8-ui-lb 3
-## Show commands to configure active-active REDB (regions 1, 2 and 3)
+## Configure active-active DB (all regions)
 
-    ./9-act-act-db
+    ./9-act-act-db          # creates custom command based on actual IPs and saves to script
+    ./go-build-aa-database  # actually creates DB
+
+## Deploy container for DB client (from where tests are run)
+
+    ./10-deploy-redis-client
+
+## Adjust Redis cluster's SSL parameters for proper DB client access
+### Get UI coordinates for each cluster
+    ./show-ui-access-info       #  take note of this (notepad file, etc)
+### From UI, change DB parameters for client SSL communication. 
+**For each Redis cluster** , from UI:
+- top menu: databases
+- click on database _mycrdb_
+- click tab _configuration_
+- click _Edit_ button at bottom of page
+- Section TLS: select _Require TLS for All Communications_
+- Section TLS: UNcheck _Enforce client authentication_
+- click _Update_ button at bottom of page
+
+## Deploy test tools to client container
+### Get proxy (CA) certificates needed for client access
+    ./show-proxy-certs       #  take note of this (notepad file, etc)
+### Get names of the active-active databases (see "Host for DB client")
+    ./aa-get-client-info      #  take note of this, too
+
+### Access client container
+    ./connect-to-client
+    cd /tmp
+
+### Deploy the test program (needs python)
+    curl https://raw.githubusercontent.com/jbtrouve/pdsc-redis-exploration/main/produce-activity.py >produce-activity.py
+
+### Adjust name of databases in python program
+    vi produce-activity.pl
+       # Change all mycrdb-db.r2.NN.NN.NN.NN.nip.io  to the proper _Host for DB client_
+
+### Deploy proxy certificates
+    cat >cert_r1.pem
+         ### paste certificate for region 1 cluster
+    ^D
+    cat >cert_r2.pem
+         ### paste certificate for region 2 cluster
+    ^D
+
+Run sample program (use -u if piping to _tee_ ):
+
+    python -u produce-activity.py | tee activity.out
+
+In another session on the same pod, run memtier_benchmark; use output of *aa-get-client-info* to get the proper IPs.  In our case 2 runs at 5000 reps (* 4 threadstakes about 1 minute.
+
+    memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
+
+
+
 
 ## Test DB access (from server containers themselves)
 
@@ -87,19 +141,6 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     kubectl exec -it rec-$SITE-0 -- /bin/bash
     . . .  same as above
 
-## Prepare for external access
-### Get UI coordinates for each cluster
-    ./show-ui-access-info
-### From UI, change DB parameters for client SSL communication. 
-
-**For each Redis cluster** , from UI:
-- top menu: databases
-- click on database _mycrdb_
-- click tab _configuration_
-- click _Edit_ button at bottom of page
-- Section TLS: select _Require TLS for All Communications_
-- Section TLS: UNcheck _Enforce client authentication_
-- click _Update_ button at bottom of page
 
 ### From UI, obtain client certificate. 
 **For each Redis cluster** , from UI:
@@ -130,36 +171,5 @@ On the GKE cluster where Redis DB is hosted:
     memtier_benchmark -s mycrdb-db.r1.34.152.54.45.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.54.45.nip.io --cacert cert_r1.pem -R -n 2000 -d 250 -R 16 --key-pattern=P:P --ratio=1:10
     memtier_benchmark --help   # to explain parameters
 
-## Use a container to run FMEA tests 
-Get names of the active-active databases (see "Host for DB client")
-
-    ./aa-get-client-info
-
-On the GKE cluster where Redis DB is hosted, deploy a container with image redislabs/redis
-
-    kubectl apply -f redis-client.yaml -n redis
-
-Connect to new container
-
-    ./connect-to-client
-
-Copy _produce-activity.py_ to /tmp (on the client container)
-
-    curl https://raw.githubusercontent.com/jbtrouve/pdsc-redis-exploration/main/produce-activity.py >produce-activity.py
-
-Adjust name of databases
-
-    vi produce-activity.pl
-       # Change all mycrdb-db.r2.NN.NN.NN.NN.nip.io  to the proper _Host for DB client_
-
-Copy CA certificate files to /tmp
-
-Run sample program (use -u if piping to _tee_ ):
-
-    python -u produce-activity.py | tee activity.out
-
-In another session on the same pod, run memtier_benchmark; use output of *aa-get-client-info* to get the proper IPs.  In our case 2 runs at 5000 reps (* 4 threadstakes about 1 minute.
-
-    memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
 
 The End.

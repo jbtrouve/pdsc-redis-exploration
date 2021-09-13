@@ -1,2 +1,4 @@
 . ./set-site-parameters 1
 kubectl apply -f redis-client.yaml
+echo "Wait a bit, need improvement here to find READY criteria."
+sleep 20
