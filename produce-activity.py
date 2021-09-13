@@ -2,13 +2,13 @@
 
 def hms_to_secs(hms):
   # hms:  hh:mm:ss
-  return int(hms[0:1]) * 3600 + int(hms[3:4]) * 60 + int(hms[6:7])
+  return int(hms[0:2]) * 3600 + int(hms[3:5]) * 60 + int(hms[6:8])
 
 import time
 import redis
 from datetime import datetime
 
-sleep_time = 0.1
+sleep_time = 1.0
 
 server_1 = redis.Redis(host='mycrdb-db.r1.34.152.11.67.nip.io',
                     port=443,

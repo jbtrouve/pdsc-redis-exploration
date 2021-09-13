@@ -4,6 +4,7 @@ if [[ $1 == "1" ]] ; then
 	CLUSTER="cluster-1"
 	LOCATIONS="northamerica-northeast1-a,northamerica-northeast1-b,northamerica-northeast1-c"
 	ZONE="northamerica-northeast1-a"
+	REGION="northamerica-northeast1"
 	SITE=r1
 	set +x
 elif [[ $1 == "2" ]] ; then
@@ -11,6 +12,7 @@ elif [[ $1 == "2" ]] ; then
         CLUSTER="cluster-2"
         LOCATIONS="northamerica-northeast2-a,northamerica-northeast2-b,northamerica-northeast2-c"
 	ZONE="northamerica-northeast2-a"
+	REGION="northamerica-northeast2"
 	SITE=r2
 	set +x
 elif [[ $1 == "3" ]] ; then
@@ -18,6 +20,7 @@ elif [[ $1 == "3" ]] ; then
         CLUSTER="cluster-3"
         LOCATIONS="us-east1-b,us-east1-c,us-east1-d"
 	ZONE="us-east1-b"
+	REGION="us-east1"
 	SITE=r3
 	set +x
 else
@@ -26,3 +29,5 @@ else
 	exit 1
 fi
 
+# export CLOUDSDK_COMPUTE_REGION=$REGION
+# export CLOUDSDK_COMPUTE_ZONE=$ZONE

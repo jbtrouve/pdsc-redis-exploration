@@ -120,9 +120,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 Note: use -u if piping output to _tee_ 
 
 ### Test memtier_benchmark
-Notes 
-- use output of *aa-get-client-info* to get the proper IPs
-- in this case, 2 runs at 5000 reps (* 4 threads) takes about 1 minute
+Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 reps (* 4 threads) take about 1 minute to complete.
 
     memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
 
