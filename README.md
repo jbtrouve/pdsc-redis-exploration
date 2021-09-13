@@ -11,7 +11,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     git clone https://github.com/quintonparker/redis-enterprise-k8s-docs.git -b aws-eks-active-active aws-eks-active-active
 
 ### Download Redis Operator
-    VERSION=$(curl --silent https://api.github.com/repos/RedisLabs/redis- enterprise-k8s-docs/releases/latest | grep tag_name | awk -F'"' '{print $4}')
+    VERSION=$(curl --silent https://api.github.com/repos/RedisLabs/redis-enterprise-k8s-docs/releases/latest | grep tag_name | awk -F'"' '{print $4}')
     echo $VERSION
                v6.0.20-12
     curl --silent -O https://raw.githubusercontent.com/RedisLabs/redis-enterprise-k8s-docs/$VERSION/bundle.yaml

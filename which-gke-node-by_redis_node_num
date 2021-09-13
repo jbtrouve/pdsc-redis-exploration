@@ -14,6 +14,3 @@ echo "Pod hosting that Redis node = $POD"
 K8S_NODE=$(kubectl get pod/$POD -o json | jq -r '.spec.nodeName')
 echo "K8S node hosting that pod = $K8S_NODE"
 
-set -x
-kubectl drain $K8S_NODE --ignore-daemonsets --delete-emptydir-data
-
