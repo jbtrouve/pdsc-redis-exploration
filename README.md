@@ -125,3 +125,16 @@ Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 
     memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
 
 **If everything is OK at this point then your test platform is valid.**
+
+### Extra customization
+
+    ./set-site-parameters 1
+    ./connect-to-server 0
+      rladmin cluster config cm_session_timeout_minutes 600
+      exit
+
+    ./set-site-parameters 2
+    ./connect-to-server 0
+      rladmin cluster config cm_session_timeout_minutes 600
+      exit
+
