@@ -1,11 +1,13 @@
-NODE=$1
+REDIS_NODE=$1
 OUTFILE=$2
 
-[[ $OUTFILE = "" ]] && echo "Usage: $0 0|1|2 output_file" && exit 1
+[[ $OUTFILE = "" ]] && echo "Usage: $0 1|2|3 output_file" && exit 1
+POD=$(./which-pod-by-redis_node_num $REDIS_NODE 2>/dev/null)
 
 >$OUTFILE
 while true; do
 	date +"TS= %Y-%m-%d %H:%M:%S" | tee -a $OUTFILE
-	kubectl exec -it rec-r1-$NODE -- rladmin status nodes | tee -a $OUTFILE
+	kubectl exec -it $POD -- bash -c 'rladmin status nodes; rladmin status shards' | tee -a $OUTFILE
+	# kubectl exec -it $POD -- rladmin status shards | tee -a $OUTFILE
 	sleep 4
 done
