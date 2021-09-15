@@ -1,10 +1,11 @@
 REDIS_NODE_NUM=$1
-SITE=r1
 
 [[ $REDIS_NODE_NUM = "" ]] && echo "Usage: $0 redis_node_num" && exit 1
 
+SITE=$(kubectl get pods | awk '$1 ~ /^rec-r.-[0-9]$/ {print substr($1,5,2);exit} ')
+
 # Find IP associated to Redis node
-IP=$(kubectl exec -it rec-r1-0 -- rladmin status nodes | awk -v NODE="node:$REDIS_NODE_NUM" '$1 ~ NODE {print $3}')
+IP=$(kubectl exec -it rec-$SITE-0 -- rladmin status nodes | awk -v NODE="node:$REDIS_NODE_NUM" '$1 ~ NODE {print $3}')
 echo "Redis node $REDIS_NODE_NUM has pod IP= $IP" >&2
 
 # Find pod name associated to that IP

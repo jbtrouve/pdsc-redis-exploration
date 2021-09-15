@@ -129,13 +129,9 @@ Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 
 ## Extra customization
 
 ## Extend UI timeout (to 10 hours)
-    ./set-site-parameters 1
-    ./connect-to-server 0
-      rladmin cluster config cm_session_timeout_minutes 600
-      exit
+    . ./set-site-parameters 1
+    ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
 
-    ./set-site-parameters 2
-    ./connect-to-server 0
-      rladmin cluster config cm_session_timeout_minutes 600
-      exit
+    . ./set-site-parameters 2
+    ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
 
