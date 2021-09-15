@@ -1,0 +1,3 @@
+### . ./set-site-parameters 1 >/dev/null 2>&1
+POD=$(kubectl get pods | awk '$1 ~ /^redis-client-/ {print $1}')
+kubectl exec -it $POD -- bash -c "$*" 

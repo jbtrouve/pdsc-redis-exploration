@@ -24,7 +24,7 @@ server_2 = redis.Redis(host='mycrdb-db.r2.34.130.236.128.nip.io',
                     ssl_cert_reqs='required',
                     ssl_ca_certs='cert_r2.pem')
 
-for xx in range(500):
+for xx in range(5000):
 
     # Write to region 1, read from region 2
 
@@ -77,7 +77,7 @@ for xx in range(500):
     key2 = "Site-2-" + my_second
 
     try:
-      server_2.set(key1, value)
+      server_2.set(key2, value)
       set_status_2 = "set_2:OK   "
     except:
       set_status_2 = "set_2:ERROR"
@@ -85,7 +85,7 @@ for xx in range(500):
     time.sleep(sleep_time)
 
     try:
-      value_from_1 = server_1.get(key1)
+      value_from_1 = server_1.get(key2)
       if not value_from_1:
         value_from_1 = ""
       get_status_1 = "get_1:OK   "

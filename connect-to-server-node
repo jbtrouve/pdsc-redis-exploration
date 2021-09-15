@@ -1,6 +1,6 @@
-NODE=$1
-[[ $NODE = "" ]] && echo "Usage: $0 0|1|2" && exit 1
+REDIS_NODE=$1
+[[ $REDIS_NODE = "" ]] && echo "Usage: $0 1|2|3" && exit 1
 
-POD_PREFIX=$(kubectl get pods | awk '$1 ~ /^rec-r.-[0-9]$/ {print substr($1,1,6);exit} ')
+POD=$(./which-pod-by-redis_node_num $REDIS_NODE 2>/dev/null)
 set -x
-kubectl exec -it ${POD_PREFIX}-$NODE -- bash
+kubectl exec -it $POD -- bash

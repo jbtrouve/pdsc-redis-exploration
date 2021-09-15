@@ -126,8 +126,9 @@ Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 
 
 **If everything is OK at this point then your test platform is valid.**
 
-### Extra customization
+## Extra customization
 
+## Extend UI timeout (to 10 hours)
     ./set-site-parameters 1
     ./connect-to-server 0
       rladmin cluster config cm_session_timeout_minutes 600

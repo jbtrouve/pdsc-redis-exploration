@@ -31,7 +31,7 @@ for LOC in 1 2 ; do
 
     echo "    . ./set-site-parameters $LOC  >/dev/null 2>&1
     set -x
-    kubectl exec -it rec-r${LOC}-0 -- rladmin tune cluster default_shards_placement sparse
+    kubectl exec -it rec-r${LOC}-0 -- rladmin tune cluster default_shards_placement dense
     set +x" >>$SCRIPT
 
 done

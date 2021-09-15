@@ -1,0 +1,10 @@
+REDIS_NODE=$1
+shift
+
+[[ $REDIS_NODE = "" ]] && echo "Usage: $0 1|2|3 command [args]" && exit 1
+
+### . ./set-site-parameters 1 >/dev/null 2>&1
+set -x
+POD=$(./which-pod-by-redis_node_num $REDIS_NODE 2>/dev/null)
+set -x
+kubectl exec -it $POD -- bash -c "$*"
