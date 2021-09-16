@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DBNAME=mycrdb
+DBNAME=active-active
 
 for LOC in 1 2 3; do
     . ./set-site-parameters $LOC >/dev/null 2>&1

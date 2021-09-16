@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Extract CA certs
+for LOC in $(cat loc-list); do
+        . ./set-site-parameters $LOC >/dev/null 2>&1
+        kubectl exec -it rec-$SITE-0 -- cat /etc/opt/redislabs/proxy_cert.pem >cert_r${LOC}.pem
+done
+
+# Customize test program
+DBNAME=active-active
+PGM=produce-activity.py
+cp -p $PGM $PGM.custom
+for LOC in $(cat loc-list); do
+	. ./set-site-parameters $LOC >/dev/null 2>&1
+	IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+	sed -E -i "/${DBNAME}-db\.${SITE}\./ s/\.[0-9]+.[0-9]+.[0-9]+.[0-9]+\./.${IP}./" $PGM.custom
+done
+
+. ./set-site-parameters 1 >/dev/null 2>&1
+CLIENT_POD=$(kubectl get pods | awk '$1 ~ /^redis-client-/ {print $1}')
+
+# Customize memtier_benchmark calling script
+cp -p run_memtier_benchmark run_memtier_benchmark.custom
+IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
+sed -E -i " s/\.[0-9]+.[0-9]+.[0-9]+.[0-9]+\./.${IP}./g" run_memtier_benchmark.custom
+
+# Copy CA certs to client
+for LOC in $(cat loc-list); do
+	set -x
+	kubectl cp cert_r${LOC}.pem $CLIENT_POD:/tmp/cert_r${LOC}.pem
+	set +x
+done
+
+# Copy test programis to client
+set -x
+kubectl cp $PGM.custom $CLIENT_POD:/tmp/$PGM
+kubectl cp run_memtier_benchmark.custom $CLIENT_POD:/tmp/run_memtier_benchmark

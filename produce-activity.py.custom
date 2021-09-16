@@ -10,14 +10,14 @@ from datetime import datetime
 
 sleep_time = 1.0
 
-server_1 = redis.Redis(host='active-active-db.r1.34.152.11.67.nip.io',
+server_1 = redis.Redis(host='active-active-db.r1.34.152.4.183.nip.io',
                     port=443,
                     password='Passw0rd',
                     ssl=True,
                     ssl_cert_reqs='required',
                     ssl_ca_certs='cert_r1.pem')
 
-server_2 = redis.Redis(host='active-active-db.r2.34.130.236.128.nip.io',
+server_2 = redis.Redis(host='active-active-db.r2.34.130.171.95.nip.io',
                     port=443,
                     password='Passw0rd',
                     ssl=True,

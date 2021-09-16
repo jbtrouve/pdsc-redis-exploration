@@ -83,7 +83,7 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 ### From UI, change DB parameters for client SSL communication. 
 **For each Redis cluster** , from UI:
 - top menu: databases
-- click on database _mycrdb_
+- click on database _active-active_
 - click tab _configuration_
 - click _Edit_ button at bottom of page
 - Section TLS: select _Require TLS for All Communications_
@@ -91,44 +91,21 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 - click _Update_ button at bottom of page
 
 ## Deploy test tools to client container
-### Get proxy (CA) certificates needed for client access
-    ./show-proxy-certs       #  take note of this (notepad file, etc)
-### Get names of the active-active databases (see "Host for DB client")
-    ./aa-get-client-info      #  take note of this, too
+    ./deploy-client-programs
 
-### Access client container
-    ./connect-to-client
-    cd /tmp
-
-### Deploy the test program (needs python)
-    curl https://raw.githubusercontent.com/jbtrouve/pdsc-redis-exploration/main/produce-activity.py >produce-activity.py
-
-### Adjust name of databases in python program
-    vi produce-activity.pl
-       # Change all mycrdb-db.r2.NN.NN.NN.NN.nip.io  to the proper _Host for DB client_
-
-### Deploy proxy certificates
-    cat >cert_r1.pem
-         ### paste certificate for region 1 cluster
-    ^D
-    cat >cert_r2.pem
-         ### paste certificate for region 2 cluster
-    ^D
-
+## Validate test tools work OK
 ### Run sample program 
-    python produce-activity.py      # stop with Ctrl-C
+    ./exec-on-client "cd /tmp; python produce-activity.py"
 Note: use -u if piping output to _tee_ 
 
-### Test memtier_benchmark
-Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 reps (* 4 threads) take about 1 minute to complete.
-
-    memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
+### Run memtier_benchmark (load generator) 
+    ./exec-on-client "cd /tmp; ./run_memtier_benchmark"
 
 **If everything is OK at this point then your test platform is valid.**
 
 ## Extra customization
 
-## Extend UI timeout (to 10 hours)
+### Extend UI timeout (to 10 hours)
     . ./set-site-parameters 1
     ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
 

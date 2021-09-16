@@ -44,3 +44,38 @@ On the GKE cluster where Redis DB is hosted:
 ### Run memtier_benchmark (sample for a quick test)
     memtier_benchmark -s mycrdb-db.r1.34.152.54.45.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.54.45.nip.io --cacert cert_r1.pem -R -n 2000 -d 250 -R 16 --key-pattern=P:P --ratio=1:10
     memtier_benchmark --help   # to explain parameters
+
+## Deploy test tools to client container (manual version)
+### Get proxy (CA) certificates needed for client access
+    ./show-proxy-certs       #  take note of this (notepad file, etc)
+### Get names of the active-active databases (see "Host for DB client")
+    ./aa-get-client-info      #  take note of this, too
+
+### Access client container
+    ./connect-to-client
+    cd /tmp
+
+### Deploy the test program (needs python)
+    curl https://raw.githubusercontent.com/jbtrouve/pdsc-redis-exploration/main/produce-activity.py >produce-activity.py
+
+### Adjust name of databases in python program
+    vi produce-activity.pl
+       # Change all active-active-db.r2.NN.NN.NN.NN.nip.io  to the proper _Host for DB client_
+
+### Deploy proxy certificates
+    cat >cert_r1.pem
+         ### paste certificate for region 1 cluster
+    ^D
+    cat >cert_r2.pem
+         ### paste certificate for region 2 cluster
+    ^D
+
+### Run sample program 
+    python produce-activity.py      # stop with Ctrl-C
+Note: use -u if piping output to _tee_ 
+
+### Test memtier_benchmark
+Use output of *aa-get-client-info* to get the proper IPs.  Here, 2 runs at 5000 reps (* 4 threads) take about 1 minute to complete.
+
+    memtier_benchmark -s mycrdb-db.r1.34.152.39.94.nip.io -p 443 -a mycrdb --tls --sni mycrdb-db.r1.34.152.39.94.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:100 --hide-histogram --run-count=2
+

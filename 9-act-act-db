@@ -1,13 +1,13 @@
 #!/bin/bash
 
-DBNAME=mycrdb
+DBNAME=active-active
 
 declare -A  IP U P FQDN URL INGRESS_DB_SUFFIX REPL_EP REPL_TLS_SNI
 
 SCRIPT=go-build-aa-database
 echo "# This is a generated script" >$SCRIPT
 
-CMD="crdb-cli crdb create --name $DBNAME --password $DBNAME --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true "
+CMD="crdb-cli crdb create --name $DBNAME --password Passw0rd --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true "
 
 for LOC in 1 2 ; do
 	. ./set-site-parameters $LOC >/dev/null 2>&1

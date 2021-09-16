@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCS="1 2 3"
+LOCS=$(cat loc-list)
 [[ $1 = "" ]] || LOCS=$1
 
 CERT_FILE=/etc/opt/redislabs/proxy_cert.pem

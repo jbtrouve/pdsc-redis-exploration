@@ -1,0 +1,2 @@
+memtier_benchmark -s active-active-db.r1.34.152.4.183.nip.io -p 443 -a Passw0rd --tls --sni active-active-db.r1.34.152.4.183.nip.io --cacert cert_r1.pem -R -n 5000 -d 25 -R 16 --key-pattern=P:P --ratio=1:1 --hide-histogram --run-count=20
+
