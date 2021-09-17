@@ -2,7 +2,7 @@
 
 DBNAME=active-active
 
-for LOC in 1 2 3; do
+for LOC in $(cat loc-list); do
     . ./set-site-parameters $LOC >/dev/null 2>&1
     IP=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
 

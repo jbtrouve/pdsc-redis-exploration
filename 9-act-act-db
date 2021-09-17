@@ -9,7 +9,7 @@ echo "# This is a generated script" >$SCRIPT
 
 CMD="crdb-cli crdb create --name $DBNAME --password Passw0rd --memory-size 1000m --encryption yes --causal-consistency true  --shards-count 3 --replication true "
 
-for LOC in 1 2 ; do
+for LOC in $(cat loc-list) ; do
 	. ./set-site-parameters $LOC >/dev/null 2>&1
 	IP[$LOC]=$(kubectl get service/ingress-nginx-controller -o yaml -n ingress-nginx | grep ip: | awk '{print $NF}')
 	U[$LOC]=$(kubectl get secret rec-$SITE -o jsonpath='{.data.username}' | base64 --decode)
