@@ -1,0 +1,1053 @@
+TS= 2021-09-21 17:33:22
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.26GB/4GB 1.17GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.32GB/4GB 1.23GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.91MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.6MB       [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.85MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.55MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.91MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.5MB       [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:33:31
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.29GB/4GB 1.2GB/3.28GB    6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.32GB/4GB 1.23GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.91MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.56MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.85MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.59MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.89MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.5MB       [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:33:39
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.98GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.29GB/4GB 1.2GB/3.28GB    6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.32GB/4GB 1.23GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.95MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.49MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.82MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.55MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.81MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.62MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:33:48
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.23GB/4GB 1.14GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.92MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.49MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.86MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.48MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.77MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.54MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:33:57
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.02GB/4GB 1.3GB/3.28GB    6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.24GB/4GB 1.15GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.49MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.45MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.31MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.48MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.19MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.51MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:05
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.26GB/4GB 1.17GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.88MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.49MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.86MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.63MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.97MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.51MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:13
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.21GB/4GB 1.12GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.29GB/4GB 1.2GB/3.28GB    6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.92MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.53MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.97MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.55MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.97MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.55MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:22
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.01GB/4GB 1.29GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.31GB/4GB 1.23GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 master 0-5460       40.84MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 slave  0-5460       40.53MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 master 5461-10922   40.94MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 slave  5461-10922   40.59MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 master 10923-16383  40.85MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 slave  10923-16383  40.58MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:30
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.3GB/4GB  1.21GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.24MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.88MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.25MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.77MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.28MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.78MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:39
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.98GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.27GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.29GB/4GB 1.21GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       41.6MB       [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       42.24MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   41.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   42.08MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  41.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  42.14MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:48
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.27GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     2.21GB/4GB 1.13GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.67MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.25MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.64MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.2MB       [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  42MB         [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.09MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:34:56
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.99GB/4GB 1.27GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 11s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.72MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.76MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:09
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.98GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 19s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.79MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.66MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:18
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.03GB/4GB 1.31GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 27s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.75MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.74MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:28
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 37s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.84MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.79MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.82MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:36
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 45s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.75MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.74MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:45
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                 [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                     [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                     [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 54s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.75MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.82MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:35:53
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.24GB/4GB 1.15GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 2s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.79MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.78MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:02
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.27GB/4GB 1.18GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 11s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.71MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.78MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:11
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 20s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.71MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.86MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:20
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 30s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.75MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.78MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:29
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.97GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 39s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.22MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.28MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.12MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:37
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 47s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.83MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.86MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:47
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.26GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 1m 56s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.79MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.82MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:36:55
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 4s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.72MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.78MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:03
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.23GB/4GB 1.14GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 13s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.82MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:11
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 21s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.72MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.86MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:19
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 30s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.68MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:30
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 39s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.83MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:38
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.01GB/4GB 1.28GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 48s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.68MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:48
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 2m 57s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.83MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:37:57
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.09GB/4GB 1.37GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 6s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.75MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:06
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 15s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.85MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.92MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.91MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:14
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 23s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.83MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:23
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.23GB/4GB 1.14GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 33s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.71MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:32
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 41s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:41
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.27GB/4GB 1.18GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 3m 51s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.72MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.71MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:50
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 0s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.67MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:38:59
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.97GB/4GB 1.25GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 10s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.26MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.33MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.28MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:10
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.97GB/4GB 1.25GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 19s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:18
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.98GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 28s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.71MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:27
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 37s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.76MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.79MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:36
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 45s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.83MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:44
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.22GB/4GB 1.13GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 4m 53s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.84MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.72MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:39:52
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.26GB/4GB 1.17GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 1s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.68MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:01
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 11s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.72MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:10
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 20s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.85MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.85MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.72MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:20
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.98GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 30s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.78MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.85MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.68MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:30
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 39s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.82MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.89MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.76MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:38
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.99GB/4GB 1.27GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 49s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.78MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.83MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:49
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.99GB/4GB 1.27GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 5m 58s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.7MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.8MB      [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:40:57
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 6s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.82MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.76MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:07
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.1GB/4GB  1.38GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 17s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.69MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.72MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:17
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.09GB/4GB 1.37GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 26s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.84MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:26
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 36s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.72MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:35
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 44s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.77MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.17MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:42
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.23GB/4GB 1.14GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 6m 52s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.78MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.89MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.76MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:51
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 0s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.66MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.68MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:41:59
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                   [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.99GB/4GB 1.27GB/3.28GB   6.0.20-97 [32mOK[0m[36m                       [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                       [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 9s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.7MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.73MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.68MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:42:09
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.99GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 18s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.74MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.8MB      [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:42:18
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.8                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 27s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.78MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.81MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.76MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:42:27
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.1GB/4GB  1.38GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 36s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID    NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS     [0m
+[36mdb:4     active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:3 node:2 master 0-5460      40.8MB      [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:5 node:2 master 5461-10922  40.87MB     [32mOK[0m[1m[36m         [0m
+[36mdb:4     active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: DOWN[0m[36m[0m
+[1m[36mdb:4     active-active redis:7 node:2 master 10923-16383 40.82MB     [32mOK[0m[1m[36m         [0m
+TS= 2021-09-21 17:42:36
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS                    [0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.09GB/4GB 1.37GB/3.28GB   6.0.20-97 [32mOK[0m[36m                        [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.19GB/4GB 1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m                        [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     -/4GB      -/3.28GB        6.0.20-97 [31mDOWN, last seen 7m 45s ago[0m[36m[0m
+[1mSHARDS:[0m
+[1m[4mDB:ID NAME          ID      NODE   ROLE   SLOTS       USED_MEMORY STATUS                                                                                                                                                                                                                  [0m
+[36mdb:4  active-active redis:2 node:3 slave  0-5460      N/A         [31mERROR: <ProtocolError for rec-r1.redis.svc.cluster.local:nC3U0g_UtuwoBBpAgYh9l2Q85910hmdZklYfOLENh0T4TaI792LIIL3L+25NzEnKwg2HMqy5J5Cpo_qt1CPuCg==@localhost:3341/nodes/3/mesh/rl_info_provider: 503 Service Unavailable>[0m[36m[0m
+[1m[36mdb:4  active-active redis:3 node:2 master 0-5460      40.76MB     [32mOK[0m[1m[36m                                                                                                                                                                                                                      [0m
+[36mdb:4  active-active redis:4 node:3 slave  5461-10922  N/A         [31mERROR: <ProtocolError for rec-r1.redis.svc.cluster.local:nC3U0g_UtuwoBBpAgYh9l2Q85910hmdZklYfOLENh0T4TaI792LIIL3L+25NzEnKwg2HMqy5J5Cpo_qt1CPuCg==@localhost:3341/nodes/3/mesh/rl_info_provider: 503 Service Unavailable>[0m[36m[0m
+[1m[36mdb:4  active-active redis:5 node:2 master 5461-10922  40.71MB     [32mOK[0m[1m[36m                                                                                                                                                                                                                      [0m
+[36mdb:4  active-active redis:6 node:3 slave  10923-16383 N/A         [31mERROR: <ProtocolError for rec-r1.redis.svc.cluster.local:nC3U0g_UtuwoBBpAgYh9l2Q85910hmdZklYfOLENh0T4TaI792LIIL3L+25NzEnKwg2HMqy5J5Cpo_qt1CPuCg==@localhost:3341/nodes/3/mesh/rl_info_provider: 503 Service Unavailable>[0m[36m[0m
+[1m[36mdb:4  active-active redis:7 node:2 master 10923-16383 40.75MB     [32mOK[0m[1m[36m                                                                                                                                                                                                                      [0m
+TS= 2021-09-21 17:42:44
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.09GB/4GB 1.37GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.23GB/4GB 1.14GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.46GB/4GB 1.37GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       39.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.94MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   39.53MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.93MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  39.48MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.96MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:42:52
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.1GB/4GB  1.38GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.46GB/4GB 1.36GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       39.87MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.98MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   39.99MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   41.01MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.02MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.96MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:00
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.07MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.82MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.13MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.85MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  41.47MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.88MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:08
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.01GB/4GB 1.29GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.43GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.6MB       [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.78MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.51MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.78MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.54MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.77MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:17
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.35GB/4GB 1.26GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.45MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.24MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.59MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.23MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.58MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.3MB       [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:25
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.06GB/4GB 1.34GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.2GB/4GB  1.11GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.98MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.59MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.89MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.54MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.92MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:33
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.07GB/4GB 1.35GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.24GB/4GB 1.15GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       41.02MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.51MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   41.09MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.62MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  41MB         [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:41
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.49MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.98MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.63MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.97MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.62MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.85MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:49
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     1.97GB/4GB 1.25GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.57MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.86MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.51MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   40.93MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.54MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.81MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:43:58
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.03GB/4GB 1.31GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.42GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1mSHARDS:[0m
+[1m[4mDB:ID      NAME           ID      NODE   ROLE   SLOTS        USED_MEMORY  STATUS[0m
+[36mdb:4       active-active  redis:2 node:3 slave  0-5460       40.53MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:3 node:2 master 0-5460       40.86MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:4 node:3 slave  5461-10922   40.67MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:5 node:2 master 5461-10922   41.01MB      [32mOK[0m[1m[36m    [0m
+[36mdb:4       active-active  redis:6 node:3 slave  10923-16383  40.62MB      [32mOK[0m[36m    [0m
+[1m[36mdb:4       active-active  redis:7 node:2 master 10923-16383  40.89MB      [32mOK[0m[1m[36m    [0m
+TS= 2021-09-21 17:44:07
+[1mCLUSTER NODES:[0m
+[1m[4mNODE:ID ROLE   ADDRESS  EXTERNAL_ADDRESS HOSTNAME SHARDS CORES FREE_RAM   PROVISIONAL_RAM VERSION   STATUS[0m
+[36m*node:1 master 10.0.2.7                  rec-r1-0 0/100  4     2.05GB/4GB 1.33GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+[1m[36mnode:2  slave  10.0.1.3                  rec-r1-1 3/100  4     2.28GB/4GB 1.19GB/3.28GB   6.0.20-97 [32mOK[0m[1m[36m    [0m
+[36mnode:3  slave  10.0.0.9                  rec-r1-2 3/100  4     2.34GB/4GB 1.25GB/3.28GB   6.0.20-97 [32mOK[0m[36m    [0m
+^CTraceback (most recent call last):
+  File "/opt/redislabs/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/opt/redislabs/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "cnm/cli/rladmin.py", line 31, in <module>
+  File "/opt/redislabs/lib/python2.7/site-packages/requests/__init__.py", line 112, in <module>
+    from . import utils
+  File "/opt/redislabs/lib/python2.7/site-packages/requests/utils.py", line 26, in <module>
+    from ._internal_utils import to_native_string
+  File "/opt/redislabs/lib/python2.7/site-packages/requests/_internal_utils.py", line 11, in <module>
+    from .compat import is_py2, builtin_str, str
+  File "/opt/redislabs/lib/python2.7/site-packages/requests/compat.py", line 29, in <module>
+    import simplejson as json
+  File "/opt/redislabs/lib/python2.7/site-packages/simplejson/__init__.py", line 112, in <module>
+    from .decoder import JSONDecoder
+  File "/opt/redislabs/lib/python2.7/site-packages/simplejson/decoder.py", line 47, in <module>
+    '"': u('"'), '\\': u('\u005c'), '/': u('/'),
+  File "/opt/redislabs/lib/python2.7/site-packages/simplejson/compat.py", line 9, in u
+    return unicode(s, 'unicode_escape')
+  File "/opt/redislabs/lib/python2.7/encodings/__init__.py", line 100, in search_function
+    level=0)
+  File "/opt/redislabs/lib/python2.7/encodings/unicode_escape.py", line 28, in <module>
+    class StreamWriter(Codec,codecs.StreamWriter):
+KeyboardInterrupt
