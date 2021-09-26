@@ -1,3 +1,5 @@
+CLIENT_INST=$1
+shift
+
 ### . ./set-site-parameters 1 >/dev/null 2>&1
-POD=$(kubectl get pods | awk '$1 ~ /^redis-client-/ {print $1}')
-kubectl exec -it $POD -- bash -c "$*" 
+kubectl exec -it redis-client-$CLIENT_INST -- bash -c "$*" 

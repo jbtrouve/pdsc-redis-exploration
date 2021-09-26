@@ -1,0 +1,22 @@
+STAT=$(./exec-on-server-node 1 rladmin status shards 2>/dev/null)
+echo "$STAT"
+SHARD_NODES=$(echo "$STAT"  | awk '$4 ~ /^node:/ {print $4}' | cut -f2 -d: | sort -u)
+echo "Redis nodes with shards: " $SHARD_NODES
+
+K8S_SHARD_NODES=""
+for N in $SHARD_NODES; do
+	K8S_NODE=$(./which-gke-node-by_redis_node_num $N 2>/dev/null)
+	K8S_SHARD_NODES="$K8S_SHARD_NODES $K8S_NODE"
+	echo "Redis node $N is on k8s node $K8S_NODE" 
+done
+
+PATT=$(echo "$K8S_SHARD_NODES" | awk '{print $1 "|" $2}')
+
+PODS=$(./show-pods-with-their-node )
+echo "=================================="
+echo "k8s nodes and their pods:"
+echo "$PODS"
+
+TPOD=$(echo "$PODS" | egrep -v "$PATT" | grep redis-client- | awk '{print $2}')
+echo "Use this client pod: $TPOD"
+

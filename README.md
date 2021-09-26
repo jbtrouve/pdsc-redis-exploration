@@ -108,7 +108,6 @@ Note: use -u if piping output to _tee_
 ### Extend UI timeout (to 10 hours)
     . ./set-site-parameters 1
     ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
-
     . ./set-site-parameters 2
     ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
 

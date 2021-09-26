@@ -1,14 +1,13 @@
 ---
 apiVersion: "apps/v1"
-kind: "StatefulSet"
+kind: "Deployment"
 metadata:
   name: "redis-client"
   namespace: "redis"
   labels:
     app: "redis-client"
 spec:
-  serviceName: redclient
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: "redis-client"
