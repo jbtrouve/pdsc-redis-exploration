@@ -1,0 +1,836 @@
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+[RUN #1 1%,   0 secs]  4 threads:       14799 ops,   16742 (avg:   16742) ops/sec, 1.11MB/sec (avg: 1.11MB/sec), 11.65 (avg: 11.65) msec latency[RUN #1 3%,   1 secs]  4 threads:       34851 ops,   20041 (avg:   18493) ops/sec, 1.33MB/sec (avg: 1.22MB/sec),  9.94 (avg: 10.67) msec latency[RUN #1 5%,   2 secs]  4 threads:       53939 ops,   19072 (avg:   18694) ops/sec, 1.26MB/sec (avg: 1.24MB/sec), 10.55 (avg: 10.63) msec latency[RUN #1 7%,   3 secs]  4 threads:       73899 ops,   19946 (avg:   19017) ops/sec, 1.32MB/sec (avg: 1.26MB/sec), 10.02 (avg: 10.46) msec latency[RUN #1 9%,   4 secs]  4 threads:       90343 ops,   16426 (avg:   18486) ops/sec, 1.09MB/sec (avg: 1.22MB/sec), 11.91 (avg: 10.73) msec latency[RUN #1 10%,   5 secs]  4 threads:      104477 ops,   14132 (avg:   17746) ops/sec, 957.52KB/sec (avg: 1.17MB/sec), 14.25 (avg: 11.20) msec latency[RUN #1 12%,   6 secs]  4 threads:      119251 ops,   14771 (avg:   17314) ops/sec, 1000.84KB/sec (avg: 1.15MB/sec), 13.45 (avg: 11.48) msec latency[RUN #1 14%,   7 secs]  4 threads:      135015 ops,   15753 (avg:   17116) ops/sec, 1.04MB/sec (avg: 1.13MB/sec), 12.65 (avg: 11.62) msec latency[RUN #1 15%,   8 secs]  4 threads:      151448 ops,   16430 (avg:   17039) ops/sec, 1.09MB/sec (avg: 1.13MB/sec), 12.25 (avg: 11.69) msec latency[RUN #1 17%,   9 secs]  4 threads:      169690 ops,   18237 (avg:   17160) ops/sec, 1.21MB/sec (avg: 1.14MB/sec), 11.08 (avg: 11.62) msec latency[RUN #1 19%,  10 secs]  4 threads:      189425 ops,   19731 (avg:   17396) ops/sec, 1.31MB/sec (avg: 1.15MB/sec), 10.07 (avg: 11.46) msec latency[RUN #1 21%,  11 secs]  4 threads:      209172 ops,   19712 (avg:   17591) ops/sec, 1.30MB/sec (avg: 1.16MB/sec), 10.26 (avg: 11.35) msec latency[RUN #1 23%,  12 secs]  4 threads:      227942 ops,   18751 (avg:   17681) ops/sec, 1.24MB/sec (avg: 1.17MB/sec), 10.55 (avg: 11.28) msec latency[RUN #1 25%,  13 secs]  4 threads:      247213 ops,   19267 (avg:   17796) ops/sec, 1.27MB/sec (avg: 1.18MB/sec), 10.42 (avg: 11.21) msec latency[RUN #1 26%,  14 secs]  4 threads:      263734 ops,   16511 (avg:   17709) ops/sec, 1.09MB/sec (avg: 1.17MB/sec), 11.85 (avg: 11.25) msec latency[RUN #1 28%,  15 secs]  4 threads:      277280 ops,   13543 (avg:   17447) ops/sec, 917.65KB/sec (avg: 1.15MB/sec), 14.82 (avg: 11.43) msec latency[RUN #1 29%,  16 secs]  4 threads:      292131 ops,   14848 (avg:   17293) ops/sec, 1006.12KB/sec (avg: 1.14MB/sec), 13.39 (avg: 11.53) msec latency[RUN #1 31%,  17 secs]  4 threads:      307529 ops,   15394 (avg:   17187) ops/sec, 1.02MB/sec (avg: 1.14MB/sec), 13.05 (avg: 11.60) msec latency[RUN #1 32%,  18 secs]  4 threads:      323853 ops,   16321 (avg:   17141) ops/sec, 1.08MB/sec (avg: 1.13MB/sec), 12.20 (avg: 11.63) msec latency[RUN #1 34%,  19 secs]  4 threads:      341709 ops,   17845 (avg:   17177) ops/sec, 1.18MB/sec (avg: 1.14MB/sec), 11.27 (avg: 11.61) msec latency[RUN #1 36%,  20 secs]  4 threads:      360949 ops,   19235 (avg:   17275) ops/sec, 1.27MB/sec (avg: 1.14MB/sec), 10.56 (avg: 11.56) msec latency[RUN #1 38%,  21 secs]  4 threads:      380649 ops,   19691 (avg:   17386) ops/sec, 1.30MB/sec (avg: 1.15MB/sec), 10.12 (avg: 11.48) msec latency[RUN #1 40%,  22 secs]  4 threads:      399498 ops,   18845 (avg:   17449) ops/sec, 1.25MB/sec (avg: 1.15MB/sec), 10.62 (avg: 11.44) msec latency[RUN #1 42%,  23 secs]  4 threads:      418746 ops,   19242 (avg:   17524) ops/sec, 1.27MB/sec (avg: 1.16MB/sec), 10.35 (avg: 11.39) msec latency[RUN #1 44%,  24 secs]  4 threads:      435331 ops,   16574 (avg:   17486) ops/sec, 1.10MB/sec (avg: 1.16MB/sec), 11.82 (avg: 11.41) msec latency[RUN #1 45%,  25 secs]  4 threads:      449700 ops,   14366 (avg:   17366) ops/sec, 973.33KB/sec (avg: 1.15MB/sec), 13.94 (avg: 11.49) msec latency[RUN #1 46%,  26 secs]  4 threads:      464680 ops,   14977 (avg:   17277) ops/sec, 1014.88KB/sec (avg: 1.14MB/sec), 13.30 (avg: 11.55) msec latency[RUN #1 48%,  27 secs]  4 threads:      479442 ops,   14755 (avg:   17186) ops/sec, 999.76KB/sec (avg: 1.14MB/sec), 13.61 (avg: 11.61) msec latency[RUN #1 50%,  28 secs]  4 threads:      496330 ops,   16881 (avg:   17176) ops/sec, 1.12MB/sec (avg: 1.14MB/sec), 11.81 (avg: 11.62) msec latency[RUN #1 51%,  29 secs]  4 threads:      514290 ops,   17957 (avg:   17202) ops/sec, 1.19MB/sec (avg: 1.14MB/sec), 11.32 (avg: 11.61) msec latency[RUN #1 53%,  30 secs]  4 threads:      534384 ops,   20090 (avg:   17295) ops/sec, 1.33MB/sec (avg: 1.14MB/sec),  9.98 (avg: 11.55) msec latency[RUN #1 55%,  31 secs]  4 threads:      552153 ops,   17728 (avg:   17309) ops/sec, 1.17MB/sec (avg: 1.15MB/sec), 11.28 (avg: 11.54) msec latency[RUN #1 57%,  32 secs]  4 threads:      567853 ops,   14702 (avg:   17225) ops/sec, 998.47KB/sec (avg: 1.14MB/sec), 13.66 (avg: 11.60) msec latency[RUN #1 58%,  33 secs]  4 threads:      584563 ops,   16666 (avg:   17208) ops/sec, 1.10MB/sec (avg: 1.14MB/sec), 11.93 (avg: 11.61) msec latency[RUN #1 60%,  34 secs]  4 threads:      599489 ops,   14922 (avg:   17143) ops/sec, 1011.15KB/sec (avg: 1.13MB/sec), 13.45 (avg: 11.65) msec latency[RUN #1 61%,  35 secs]  4 threads:      608825 ops,    9329 (avg:   16925) ops/sec, 632.12KB/sec (avg: 1.12MB/sec), 21.05 (avg: 11.80) msec latency[RUN #1 62%,  36 secs]  4 threads:      618084 ops,    9253 (avg:   16718) ops/sec, 626.85KB/sec (avg: 1.11MB/sec), 21.89 (avg: 11.95) msec latency[RUN #1 63%,  37 secs]  4 threads:      628058 ops,    9972 (avg:   16540) ops/sec, 675.85KB/sec (avg: 1.09MB/sec), 20.14 (avg: 12.08) msec latency[RUN #1 64%,  38 secs]  4 threads:      641305 ops,   13239 (avg:   16455) ops/sec, 897.09KB/sec (avg: 1.09MB/sec), 15.11 (avg: 12.14) msec latency[RUN #1 66%,  39 secs]  4 threads:      659529 ops,   18221 (avg:   16499) ops/sec, 1.21MB/sec (avg: 1.09MB/sec), 10.97 (avg: 12.11) msec latency[RUN #1 68%,  40 secs]  4 threads:      678193 ops,   18658 (avg:   16552) ops/sec, 1.23MB/sec (avg: 1.10MB/sec), 10.73 (avg: 12.07) msec latency[RUN #1 69%,  41 secs]  4 threads:      694742 ops,   16473 (avg:   16550) ops/sec, 1.09MB/sec (avg: 1.10MB/sec), 12.12 (avg: 12.07) msec latency[RUN #1 71%,  42 secs]  4 threads:      711576 ops,   16804 (avg:   16556) ops/sec, 1.11MB/sec (avg: 1.10MB/sec), 11.85 (avg: 12.07) msec latency[RUN #1 73%,  43 secs]  4 threads:      727981 ops,   16400 (avg:   16553) ops/sec, 1.09MB/sec (avg: 1.10MB/sec), 12.21 (avg: 12.07) msec latency[RUN #1 74%,  44 secs]  4 threads:      741889 ops,   13905 (avg:   16494) ops/sec, 942.30KB/sec (avg: 1.09MB/sec), 14.34 (avg: 12.11) msec latency[RUN #1 75%,  45 secs]  4 threads:      754271 ops,   12368 (avg:   16404) ops/sec, 837.93KB/sec (avg: 1.09MB/sec), 16.02 (avg: 12.18) msec latency[RUN #1 77%,  46 secs]  4 threads:      767058 ops,   12785 (avg:   16327) ops/sec, 866.37KB/sec (avg: 1.08MB/sec), 15.67 (avg: 12.23) msec latency[RUN #1 78%,  47 secs]  4 threads:      781012 ops,   13947 (avg:   16277) ops/sec, 945.19KB/sec (avg: 1.08MB/sec), 14.40 (avg: 12.27) msec latency[RUN #1 80%,  48 secs]  4 threads:      797444 ops,   16403 (avg:   16280) ops/sec, 1.09MB/sec (avg: 1.08MB/sec), 12.14 (avg: 12.27) msec latency[RUN #1 82%,  49 secs]  4 threads:      815850 ops,   18395 (avg:   16322) ops/sec, 1.22MB/sec (avg: 1.08MB/sec), 10.92 (avg: 12.24) msec latency[RUN #1 84%,  50 secs]  4 threads:      835132 ops,   19278 (avg:   16380) ops/sec, 1.28MB/sec (avg: 1.08MB/sec), 10.33 (avg: 12.20) msec latency[RUN #1 85%,  51 secs]  4 threads:      853458 ops,   18321 (avg:   16417) ops/sec, 1.21MB/sec (avg: 1.09MB/sec), 10.90 (avg: 12.17) msec latency[RUN #1 87%,  53 secs]  4 threads:      868703 ops,   14686 (avg:   16384) ops/sec, 995.54KB/sec (avg: 1.08MB/sec), 13.66 (avg: 12.19) msec latency[RUN #1 88%,  54 secs]  4 threads:      884696 ops,   15977 (avg:   16376) ops/sec, 1.06MB/sec (avg: 1.08MB/sec), 12.55 (avg: 12.20) msec latency[RUN #1 90%,  55 secs]  4 threads:      898305 ops,   13570 (avg:   16325) ops/sec, 919.62KB/sec (avg: 1.08MB/sec), 14.56 (avg: 12.24) msec latency[RUN #1 91%,  56 secs]  4 threads:      910185 ops,   11871 (avg:   16245) ops/sec, 804.43KB/sec (avg: 1.07MB/sec), 16.90 (avg: 12.30) msec latency[RUN #1 92%,  57 secs]  4 threads:      924654 ops,   14465 (avg:   16214) ops/sec, 980.30KB/sec (avg: 1.07MB/sec), 13.93 (avg: 12.32) msec latency[RUN #1 94%,  58 secs]  4 threads:      938893 ops,   14214 (avg:   16180) ops/sec, 963.17KB/sec (avg: 1.07MB/sec), 14.05 (avg: 12.35) msec latency[RUN #1 96%,  59 secs]  4 threads:      955564 ops,   16668 (avg:   16188) ops/sec, 1.10MB/sec (avg: 1.07MB/sec), 12.01 (avg: 12.34) msec latency[RUN #1 97%,  60 secs]  4 threads:      974990 ops,   19412 (avg:   16242) ops/sec, 1.28MB/sec (avg: 1.07MB/sec), 10.29 (avg: 12.30) msec latency[RUN #1 99%,  60 secs]  4 threads:      993908 ops,   21678 (avg:   16319) ops/sec, 1.43MB/sec (avg: 1.08MB/sec),  9.23 (avg: 12.24) msec latency[RUN #1 100%,  61 secs]  0 threads:     1000000 ops,   21678 (avg:   16390) ops/sec, 1.43MB/sec (avg: 1.08MB/sec),  9.23 (avg: 12.19) msec latency
+
+[RUN #2] Preparing benchmark client...
+[RUN #2] Launching threads now...
+[RUN #2 1%,   0 secs]  4 threads:       14072 ops,   16155 (avg:   16155) ops/sec, 1.07MB/sec (avg: 1.07MB/sec), 11.30 (avg: 11.30) msec latency[RUN #2 3%,   1 secs]  4 threads:       28625 ops,   14550 (avg:   15297) ops/sec, 985.75KB/sec (avg: 1.01MB/sec), 13.73 (avg: 12.53) msec latency[RUN #2 4%,   2 secs]  4 threads:       42527 ops,   13899 (avg:   14810) ops/sec, 941.85KB/sec (avg: 1003.53KB/sec), 14.48 (avg: 13.17) msec latency[RUN #2 6%,   3 secs]  4 threads:       57281 ops,   14751 (avg:   14795) ops/sec, 999.40KB/sec (avg: 1002.47KB/sec), 13.43 (avg: 13.24) msec latency[RUN #2 7%,   4 secs]  4 threads:       72383 ops,   15099 (avg:   14857) ops/sec, 1023.04KB/sec (avg: 1006.69KB/sec), 13.31 (avg: 13.25) msec latency[RUN #2 9%,   5 secs]  4 threads:       88642 ops,   16256 (avg:   15095) ops/sec, 1.08MB/sec (avg: 1022.84KB/sec), 12.35 (avg: 13.09) msec latency[RUN #2 10%,   6 secs]  4 threads:      103466 ops,   14800 (avg:   15052) ops/sec, 1002.91KB/sec (avg: 1019.93KB/sec), 13.65 (avg: 13.17) msec latency[RUN #2 12%,   7 secs]  4 threads:      121337 ops,   17867 (avg:   15410) ops/sec, 1.18MB/sec (avg: 1.02MB/sec), 11.07 (avg: 12.86) msec latency[RUN #2 14%,   8 secs]  4 threads:      136386 ops,   15040 (avg:   15368) ops/sec, 1019.04KB/sec (avg: 1.02MB/sec), 13.43 (avg: 12.92) msec latency[RUN #2 15%,   9 secs]  4 threads:      152198 ops,   15796 (avg:   15412) ops/sec, 1.05MB/sec (avg: 1.02MB/sec), 12.51 (avg: 12.88) msec latency[RUN #2 17%,  10 secs]  4 threads:      169510 ops,   17308 (avg:   15586) ops/sec, 1.15MB/sec (avg: 1.03MB/sec), 11.49 (avg: 12.74) msec latency[RUN #2 18%,  11 secs]  4 threads:      183868 ops,   14355 (avg:   15482) ops/sec, 972.71KB/sec (avg: 1.02MB/sec), 13.75 (avg: 12.82) msec latency[RUN #2 20%,  12 secs]  4 threads:      197281 ops,   13410 (avg:   15321) ops/sec, 908.39KB/sec (avg: 1.01MB/sec), 15.01 (avg: 12.97) msec latency[RUN #2 21%,  13 secs]  4 threads:      211987 ops,   14703 (avg:   15277) ops/sec, 996.30KB/sec (avg: 1.01MB/sec), 13.48 (avg: 13.00) msec latency[RUN #2 23%,  14 secs]  4 threads:      227039 ops,   15026 (avg:   15260) ops/sec, 1018.15KB/sec (avg: 1.01MB/sec), 13.53 (avg: 13.04) msec latency[RUN #2 24%,  15 secs]  4 threads:      241937 ops,   14894 (avg:   15237) ops/sec, 1009.20KB/sec (avg: 1.01MB/sec), 13.29 (avg: 13.05) msec latency[RUN #2 26%,  16 secs]  4 threads:      259737 ops,   17659 (avg:   15381) ops/sec, 1.17MB/sec (avg: 1.02MB/sec), 11.61 (avg: 12.95) msec latency[RUN #2 28%,  17 secs]  4 threads:      276888 ops,   17147 (avg:   15480) ops/sec, 1.13MB/sec (avg: 1.02MB/sec), 11.43 (avg: 12.86) msec latency[RUN #2 29%,  18 secs]  4 threads:      293563 ops,   16622 (avg:   15541) ops/sec, 1.10MB/sec (avg: 1.03MB/sec), 12.20 (avg: 12.82) msec latency[RUN #2 31%,  19 secs]  4 threads:      311681 ops,   18114 (avg:   15670) ops/sec, 1.20MB/sec (avg: 1.04MB/sec), 10.91 (avg: 12.71) msec latency[RUN #2 33%,  20 secs]  4 threads:      330132 ops,   18445 (avg:   15803) ops/sec, 1.22MB/sec (avg: 1.05MB/sec), 10.57 (avg: 12.59) msec latency[RUN #2 35%,  21 secs]  4 threads:      345102 ops,   14967 (avg:   15765) ops/sec, 1014.01KB/sec (avg: 1.04MB/sec), 13.29 (avg: 12.62) msec latency[RUN #2 36%,  22 secs]  4 threads:      358259 ops,   13153 (avg:   15651) ops/sec, 891.27KB/sec (avg: 1.04MB/sec), 15.20 (avg: 12.72) msec latency[RUN #2 37%,  23 secs]  4 threads:      372331 ops,   14062 (avg:   15584) ops/sec, 952.81KB/sec (avg: 1.03MB/sec), 14.28 (avg: 12.78) msec latency[RUN #2 39%,  24 secs]  4 threads:      386074 ops,   13573 (avg:   15502) ops/sec, 919.65KB/sec (avg: 1.03MB/sec), 15.09 (avg: 12.86) msec latency[RUN #2 40%,  25 secs]  4 threads:      402246 ops,   16157 (avg:   15528) ops/sec, 1.07MB/sec (avg: 1.03MB/sec), 12.56 (avg: 12.85) msec latency[RUN #2 42%,  26 secs]  4 threads:      421106 ops,   18803 (avg:   15650) ops/sec, 1.24MB/sec (avg: 1.04MB/sec), 10.56 (avg: 12.74) msec latency[RUN #2 44%,  27 secs]  4 threads:      439729 ops,   18613 (avg:   15756) ops/sec, 1.23MB/sec (avg: 1.04MB/sec), 10.81 (avg: 12.66) msec latency[RUN #2 46%,  28 secs]  4 threads:      458191 ops,   18453 (avg:   15849) ops/sec, 1.22MB/sec (avg: 1.05MB/sec), 10.83 (avg: 12.59) msec latency[RUN #2 48%,  29 secs]  4 threads:      477000 ops,   18770 (avg:   15947) ops/sec, 1.24MB/sec (avg: 1.06MB/sec), 10.64 (avg: 12.51) msec latency[RUN #2 50%,  30 secs]  4 threads:      495008 ops,   17991 (avg:   16013) ops/sec, 1.19MB/sec (avg: 1.06MB/sec), 11.11 (avg: 12.46) msec latency[RUN #2 51%,  31 secs]  4 threads:      510097 ops,   15076 (avg:   15984) ops/sec, 1021.61KB/sec (avg: 1.06MB/sec), 13.26 (avg: 12.48) msec latency[RUN #2 52%,  32 secs]  4 threads:      522759 ops,   12633 (avg:   15882) ops/sec, 855.92KB/sec (avg: 1.05MB/sec), 15.79 (avg: 12.56) msec latency[RUN #2 54%,  33 secs]  4 threads:      535781 ops,   13019 (avg:   15797) ops/sec, 882.13KB/sec (avg: 1.05MB/sec), 15.37 (avg: 12.63) msec latency[RUN #2 55%,  34 secs]  4 threads:      549927 ops,   13982 (avg:   15745) ops/sec, 947.29KB/sec (avg: 1.04MB/sec), 14.28 (avg: 12.67) msec latency[RUN #2 57%,  35 secs]  4 threads:      565441 ops,   15501 (avg:   15738) ops/sec, 1.03MB/sec (avg: 1.04MB/sec), 12.91 (avg: 12.68) msec latency[RUN #2 58%,  36 secs]  4 threads:      584535 ops,   18807 (avg:   15822) ops/sec, 1.24MB/sec (avg: 1.05MB/sec), 10.58 (avg: 12.61) msec latency[RUN #2 60%,  37 secs]  4 threads:      604360 ops,   19818 (avg:   15928) ops/sec, 1.31MB/sec (avg: 1.05MB/sec), 10.15 (avg: 12.53) msec latency[RUN #2 62%,  38 secs]  4 threads:      622593 ops,   18175 (avg:   15986) ops/sec, 1.20MB/sec (avg: 1.06MB/sec), 10.77 (avg: 12.48) msec latency[RUN #2 64%,  39 secs]  4 threads:      641507 ops,   18851 (avg:   16058) ops/sec, 1.25MB/sec (avg: 1.06MB/sec), 10.77 (avg: 12.43) msec latency[RUN #2 66%,  40 secs]  4 threads:      661198 ops,   19650 (avg:   16146) ops/sec, 1.30MB/sec (avg: 1.07MB/sec), 10.18 (avg: 12.36) msec latency[RUN #2 68%,  41 secs]  4 threads:      680640 ops,   19426 (avg:   16224) ops/sec, 1.29MB/sec (avg: 1.07MB/sec), 10.31 (avg: 12.30) msec latency[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+[RUN #1 1%,   0 secs]  4 threads:       11691 ops,   13411 (avg:   13411) ops/sec, 908.94KB/sec (avg: 908.94KB/sec), 14.33 (avg: 14.33) msec latency[RUN #1 3%,   1 secs]  4 threads:       26360 ops,   14648 (avg:   14072) ops/sec, 992.47KB/sec (avg: 953.59KB/sec), 13.57 (avg: 13.91) msec latency[RUN #1 4%,   2 secs]  4 threads:       43184 ops,   16811 (avg:   15026) ops/sec, 1.11MB/sec (avg: 1018.11KB/sec), 11.89 (avg: 13.12) msec latency[RUN #1 6%,   3 secs]  4 threads:       61378 ops,   18187 (avg:   15842) ops/sec, 1.20MB/sec (avg: 1.05MB/sec), 11.00 (avg: 12.49) msec latency[RUN #1 8%,   4 secs]  4 threads:       80790 ops,   19391 (avg:   16571) ops/sec, 1.28MB/sec (avg: 1.10MB/sec), 10.33 (avg: 11.97) msec latency[RUN #1 10%,   5 secs]  4 threads:      104471 ops,   23660 (avg:   17778) ops/sec, 1.57MB/sec (avg: 1.18MB/sec),  8.46 (avg: 11.18) msec latency[RUN #1 13%,   6 secs]  4 threads:      126402 ops,   21902 (avg:   18379) ops/sec, 1.45MB/sec (avg: 1.22MB/sec),  9.09 (avg: 10.81) msec latency[RUN #1 14%,   7 secs]  4 threads:      144719 ops,   18212 (avg:   18357) ops/sec, 1.21MB/sec (avg: 1.21MB/sec), 10.99 (avg: 10.84) msec latency[RUN #1 17%,   8 secs]  4 threads:      166939 ops,   22199 (avg:   18790) ops/sec, 1.47MB/sec (avg: 1.24MB/sec),  8.96 (avg: 10.59) msec latency[RUN #1 19%,   9 secs]  4 threads:      189124 ops,   22170 (avg:   19132) ops/sec, 1.47MB/sec (avg: 1.27MB/sec),  9.04 (avg: 10.41) msec latency[RUN #1 20%,  10 secs]  4 threads:      204048 ops,   14920 (avg:   18745) ops/sec, 1010.78KB/sec (avg: 1.24MB/sec), 13.22 (avg: 10.61) msec latency[RUN #1 22%,  11 secs]  4 threads:      218320 ops,   14269 (avg:   18369) ops/sec, 966.91KB/sec (avg: 1.22MB/sec), 14.02 (avg: 10.84) msec latency[RUN #1 23%,  12 secs]  4 threads:      234429 ops,   16106 (avg:   18193) ops/sec, 1.07MB/sec (avg: 1.20MB/sec), 12.52 (avg: 10.95) msec latency[RUN #1 25%,  13 secs]  4 threads:      251500 ops,   17056 (avg:   18111) ops/sec, 1.13MB/sec (avg: 1.20MB/sec), 11.74 (avg: 11.00) msec latency[RUN #1 27%,  14 secs]  4 threads:      271073 ops,   19410 (avg:   18199) ops/sec, 1.28MB/sec (avg: 1.20MB/sec), 10.24 (avg: 10.95) msec latency[RUN #1 29%,  15 secs]  4 threads:      291813 ops,   20735 (avg:   18358) ops/sec, 1.37MB/sec (avg: 1.21MB/sec),  9.71 (avg: 10.86) msec latency[RUN #1 31%,  16 secs]  4 threads:      313500 ops,   21683 (avg:   18555) ops/sec, 1.43MB/sec (avg: 1.23MB/sec),  9.16 (avg: 10.74) msec latency[RUN #1 34%,  17 secs]  4 threads:      336314 ops,   22808 (avg:   18793) ops/sec, 1.51MB/sec (avg: 1.24MB/sec),  8.65 (avg: 10.60) msec latency[RUN #1 36%,  18 secs]  4 threads:      358333 ops,   22015 (avg:   18964) ops/sec, 1.46MB/sec (avg: 1.25MB/sec),  9.23 (avg: 10.52) msec latency[RUN #1 38%,  19 secs]  4 threads:      380428 ops,   22086 (avg:   19121) ops/sec, 1.46MB/sec (avg: 1.27MB/sec),  9.04 (avg: 10.43) msec latency[RUN #1 40%,  20 secs]  4 threads:      395275 ops,   14844 (avg:   18916) ops/sec, 1005.59KB/sec (avg: 1.25MB/sec), 13.15 (avg: 10.53) msec latency[RUN #1 41%,  21 secs]  4 threads:      410279 ops,   15000 (avg:   18737) ops/sec, 1016.38KB/sec (avg: 1.24MB/sec), 13.26 (avg: 10.63) msec latency[RUN #1 43%,  22 secs]  4 threads:      426729 ops,   16446 (avg:   18637) ops/sec, 1.09MB/sec (avg: 1.23MB/sec), 12.22 (avg: 10.69) msec latency[RUN #1 45%,  23 secs]  4 threads:      445871 ops,   19139 (avg:   18658) ops/sec, 1.27MB/sec (avg: 1.23MB/sec), 10.69 (avg: 10.69) msec latency[RUN #1 47%,  24 secs]  4 threads:      465751 ops,   19847 (avg:   18706) ops/sec, 1.31MB/sec (avg: 1.24MB/sec),  9.98 (avg: 10.66) msec latency[RUN #1 49%,  25 secs]  4 threads:      486987 ops,   21227 (avg:   18803) ops/sec, 1.40MB/sec (avg: 1.24MB/sec),  9.44 (avg: 10.61) msec latency[RUN #1 51%,  26 secs]  4 threads:      509661 ops,   22650 (avg:   18946) ops/sec, 1.50MB/sec (avg: 1.25MB/sec),  8.72 (avg: 10.53) msec latency[RUN #1 53%,  27 secs]  4 threads:      531927 ops,   22258 (avg:   19065) ops/sec, 1.47MB/sec (avg: 1.26MB/sec),  9.09 (avg: 10.47) msec latency[RUN #1 55%,  28 secs]  4 threads:      553932 ops,   21983 (avg:   19166) ops/sec, 1.45MB/sec (avg: 1.27MB/sec),  9.02 (avg: 10.41) msec latency[RUN #1 58%,  29 secs]  4 threads:      576492 ops,   22555 (avg:   19279) ops/sec, 1.49MB/sec (avg: 1.28MB/sec),  8.96 (avg: 10.35) msec latency[RUN #1 59%,  30 secs]  4 threads:      591453 ops,   14956 (avg:   19139) ops/sec, 1013.40KB/sec (avg: 1.27MB/sec), 13.00 (avg: 10.42) msec latency[RUN #1 61%,  31 secs]  4 threads:      606572 ops,   15111 (avg:   19013) ops/sec, 1023.93KB/sec (avg: 1.26MB/sec), 13.18 (avg: 10.49) msec latency[RUN #1 62%,  32 secs]  4 threads:      622723 ops,   16148 (avg:   18926) ops/sec, 1.07MB/sec (avg: 1.25MB/sec), 12.45 (avg: 10.54) msec latency[RUN #1 64%,  33 secs]  4 threads:      641632 ops,   18905 (avg:   18925) ops/sec, 1.25MB/sec (avg: 1.25MB/sec), 10.85 (avg: 10.55) msec latency[RUN #1 66%,  34 secs]  4 threads:      661599 ops,   19957 (avg:   18955) ops/sec, 1.32MB/sec (avg: 1.25MB/sec),  9.96 (avg: 10.53) msec latency[RUN #1 68%,  35 secs]  4 threads:      683263 ops,   21632 (avg:   19030) ops/sec, 1.43MB/sec (avg: 1.26MB/sec),  9.16 (avg: 10.49) msec latency[RUN #1 71%,  36 secs]  4 threads:      705604 ops,   22327 (avg:   19119) ops/sec, 1.48MB/sec (avg: 1.27MB/sec),  8.81 (avg: 10.43) msec latency[RUN #1 73%,  37 secs]  4 threads:      729585 ops,   23975 (avg:   19247) ops/sec, 1.59MB/sec (avg: 1.27MB/sec),  8.38 (avg: 10.37) msec latency[RUN #1 75%,  38 secs]  4 threads:      752196 ops,   22607 (avg:   19334) ops/sec, 1.50MB/sec (avg: 1.28MB/sec),  8.87 (avg: 10.32) msec latency[RUN #1 78%,  39 secs]  4 threads:      775964 ops,   23756 (avg:   19444) ops/sec, 1.57MB/sec (avg: 1.29MB/sec),  8.44 (avg: 10.26) msec latency[RUN #1 79%,  40 secs]  4 threads:      790150 ops,   14183 (avg:   19316) ops/sec, 961.33KB/sec (avg: 1.28MB/sec), 13.81 (avg: 10.33) msec latency[RUN #1 80%,  41 secs]  4 threads:      802881 ops,   12725 (avg:   19158) ops/sec, 862.17KB/sec (avg: 1.27MB/sec), 15.73 (avg: 10.41) msec latency[RUN #1 82%,  42 secs]  4 threads:      820894 ops,   17972 (avg:   19131) ops/sec, 1.19MB/sec (avg: 1.27MB/sec), 11.20 (avg: 10.43) msec latency[RUN #1 84%,  43 secs]  4 threads:      841040 ops,   20122 (avg:   19153) ops/sec, 1.33MB/sec (avg: 1.27MB/sec),  9.88 (avg: 10.42) msec latency[RUN #1 86%,  44 secs]  4 threads:      861292 ops,   20238 (avg:   19178) ops/sec, 1.34MB/sec (avg: 1.27MB/sec), 10.03 (avg: 10.41) msec latency[RUN #1 88%,  45 secs]  4 threads:      882326 ops,   21014 (avg:   19218) ops/sec, 1.39MB/sec (avg: 1.27MB/sec),  9.50 (avg: 10.39) msec latency[RUN #1 91%,  46 secs]  4 threads:      906101 ops,   23719 (avg:   19314) ops/sec, 1.57MB/sec (avg: 1.28MB/sec),  8.42 (avg: 10.33) msec latency[RUN #1 93%,  47 secs]  4 threads:      929953 ops,   23763 (avg:   19407) ops/sec, 1.57MB/sec (avg: 1.28MB/sec),  8.44 (avg: 10.29) msec latency[RUN #1 95%,  48 secs]  4 threads:      952404 ops,   22401 (avg:   19468) ops/sec, 1.48MB/sec (avg: 1.29MB/sec),  9.05 (avg: 10.26) msec latency[RUN #1 98%,  49 secs]  4 threads:      976022 ops,   23570 (avg:   19551) ops/sec, 1.56MB/sec (avg: 1.29MB/sec),  8.47 (avg: 10.21) msec latency[RUN #1 99%,  50 secs]  4 threads:      990414 ops,   14820 (avg:   19460) ops/sec, 1004.31KB/sec (avg: 1.29MB/sec), 13.43 (avg: 10.26) msec latency[RUN #1 100%,  51 secs]  0 threads:     1000000 ops,   14820 (avg:   19508) ops/sec, 1004.31KB/sec (avg: 1.29MB/sec), 13.43 (avg: 10.24) msec latency
+
+[RUN #2] Preparing benchmark client...
+[RUN #2] Launching threads now...
+[RUN #2 2%,   0 secs]  4 threads:       15110 ops,   17113 (avg:   17113) ops/sec, 1.13MB/sec (avg: 1.13MB/sec), 11.43 (avg: 11.43) msec latency[RUN #2 3%,   1 secs]  4 threads:       34827 ops,   19711 (avg:   18493) ops/sec, 1.30MB/sec (avg: 1.22MB/sec), 10.17 (avg: 10.72) msec latency[RUN #2 6%,   2 secs]  4 threads:       56868 ops,   22036 (avg:   19722) ops/sec, 1.46MB/sec (avg: 1.31MB/sec),  8.90 (avg: 10.01) msec latency[RUN #2 8%,   3 secs]  4 threads:       80317 ops,   23442 (avg:   20680) ops/sec, 1.55MB/sec (avg: 1.37MB/sec),  8.62 (avg:  9.61) msec latency[RUN #2 10%,   4 secs]  4 threads:      103256 ops,   22928 (avg:   21140) ops/sec, 1.52MB/sec (avg: 1.40MB/sec),  8.59 (avg:  9.38) msec latency[RUN #2 13%,   5 secs]  4 threads:      125955 ops,   22693 (avg:   21404) ops/sec, 1.50MB/sec (avg: 1.42MB/sec),  8.76 (avg:  9.27) msec latency[RUN #2 15%,   6 secs]  4 threads:      147350 ops,   21372 (avg:   21400) ops/sec, 1.41MB/sec (avg: 1.42MB/sec),  9.36 (avg:  9.28) msec latency[RUN #2 16%,   7 secs]  4 threads:      161788 ops,   14435 (avg:   20516) ops/sec, 977.85KB/sec (avg: 1.36MB/sec), 13.66 (avg:  9.67) msec latency[RUN #2 18%,   8 secs]  4 threads:      176660 ops,   14869 (avg:   19881) ops/sec, 1007.45KB/sec (avg: 1.32MB/sec), 13.62 (avg: 10.01) msec latency[RUN #2 19%,   9 secs]  4 threads:      192976 ops,   16297 (avg:   19518) ops/sec, 1.08MB/sec (avg: 1.29MB/sec), 12.51 (avg: 10.22) msec latency[RUN #2 21%,  10 secs]  4 threads:      212422 ops,   19423 (avg:   19509) ops/sec, 1.29MB/sec (avg: 1.29MB/sec), 10.08 (avg: 10.21) msec latency[RUN #2 23%,  11 secs]  4 threads:      233712 ops,   21286 (avg:   19658) ops/sec, 1.41MB/sec (avg: 1.30MB/sec),  9.51 (avg: 10.14) msec latency[RUN #2 26%,  12 secs]  4 threads:      255919 ops,   22186 (avg:   19855) ops/sec, 1.47MB/sec (avg: 1.31MB/sec),  9.08 (avg: 10.05) msec latency[RUN #2 28%,  13 secs]  4 threads:      278322 ops,   22388 (avg:   20037) ops/sec, 1.48MB/sec (avg: 1.33MB/sec),  8.68 (avg:  9.94) msec latency[RUN #2 30%,  14 secs]  4 threads:      301581 ops,   23253 (avg:   20253) ops/sec, 1.54MB/sec (avg: 1.34MB/sec),  8.62 (avg:  9.84) msec latency[RUN #2 32%,  15 secs]  4 threads:      323915 ops,   22327 (avg:   20384) ops/sec, 1.48MB/sec (avg: 1.35MB/sec),  9.00 (avg:  9.78) msec latency[RUN #2 35%,  16 secs]  4 threads:      345935 ops,   22010 (avg:   20480) ops/sec, 1.46MB/sec (avg: 1.36MB/sec),  8.99 (avg:  9.73) msec latency[RUN #2 36%,  17 secs]  4 threads:      360381 ops,   14436 (avg:   20142) ops/sec, 977.97KB/sec (avg: 1.33MB/sec), 13.92 (avg:  9.90) msec latency[RUN #2 38%,  18 secs]  4 threads:      376113 ops,   15678 (avg:   19905) ops/sec, 1.04MB/sec (avg: 1.32MB/sec), 12.69 (avg: 10.01) msec latency[RUN #2 39%,  19 secs]  4 threads:      392360 ops,   16217 (avg:   19719) ops/sec, 1.07MB/sec (avg: 1.30MB/sec), 12.74 (avg: 10.13) msec latency[RUN #2 41%,  20 secs]  4 threads:      412427 ops,   20049 (avg:   19735) ops/sec, 1.33MB/sec (avg: 1.31MB/sec),  9.88 (avg: 10.11) msec latency[RUN #2 43%,  21 secs]  4 threads:      433847 ops,   21413 (avg:   19812) ops/sec, 1.42MB/sec (avg: 1.31MB/sec),  9.41 (avg: 10.08) msec latency[RUN #2 46%,  22 secs]  4 threads:      455600 ops,   21748 (avg:   19896) ops/sec, 1.44MB/sec (avg: 1.32MB/sec),  9.19 (avg: 10.04) msec latency[RUN #2 48%,  23 secs]  4 threads:      477320 ops,   21695 (avg:   19972) ops/sec, 1.44MB/sec (avg: 1.32MB/sec),  9.22 (avg: 10.00) msec latency[RUN #2 50%,  24 secs]  4 threads:      500238 ops,   22897 (avg:   20089) ops/sec, 1.52MB/sec (avg: 1.33MB/sec),  8.73 (avg:  9.94) msec latency[RUN #2 52%,  25 secs]  4 threads:      522818 ops,   22498 (avg:   20183) ops/sec, 1.49MB/sec (avg: 1.34MB/sec),  8.87 (avg:  9.90) msec latency[RUN #2 54%,  26 secs]  4 threads:      544456 ops,   21631 (avg:   20236) ops/sec, 1.43MB/sec (avg: 1.34MB/sec),  9.20 (avg:  9.87) msec latency[RUN #2 56%,  27 secs]  4 threads:      559489 ops,   15004 (avg:   20049) ops/sec, 1016.70KB/sec (avg: 1.33MB/sec), 13.34 (avg:  9.96) msec latency[RUN #2 58%,  28 secs]  4 threads:      575550 ops,   16046 (avg:   19910) ops/sec, 1.06MB/sec (avg: 1.32MB/sec), 12.50 (avg: 10.03) msec latency[RUN #2 59%,  29 secs]  4 threads:      592588 ops,   17028 (avg:   19814) ops/sec, 1.13MB/sec (avg: 1.31MB/sec), 11.70 (avg: 10.08) msec latency[RUN #2 61%,  30 secs]  4 threads:      612068 ops,   19471 (avg:   19802) ops/sec, 1.29MB/sec (avg: 1.31MB/sec), 10.27 (avg: 10.09) msec latency[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #1 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #1 0%,   0 secs]  0 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency
+
+[RUN #2] Preparing benchmark client...
+[RUN #2] Launching threads now...
+[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #2 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #2 0%,   0 secs]  0 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency
+
+[RUN #3] Preparing benchmark client...
+[RUN #3] Launching threads now...
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #3 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #3 0%,   0 secs]  0 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency
+
+[RUN #4] Preparing benchmark client...
+[RUN #4] Launching threads now...
+[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #4 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+TLS connection error: DH lib
+[RUN #4 0%,   0 secs]  0 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency
+
+[RUN #5] Preparing benchmark client...
+[RUN #5] Launching threads now...
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latencyTLS connection error: DH lib
+[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency[RUN #5 0%,   0 secs]  4 threads:           0 ops,       0 (avg:       0) ops/sec, 0.00KB/sec (avg: 0.00KB/sec),  0.00 (avg:  0.00) msec latency^C
