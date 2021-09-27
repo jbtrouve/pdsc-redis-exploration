@@ -10,7 +10,7 @@ from datetime import datetime
 
 sleep_time = 0.2
 
-server_1 = redis.Redis(host='active-active-db.r1.34.152.24.78.nip.io',
+server_1 = redis.Redis(host='active-active-db.r1.34.95.9.247.nip.io',
                     port=443,
                     password='Passw0rd',
                     ssl=True,

@@ -95,11 +95,11 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
 
 ## Validate test tools work OK
 ### Run sample program 
-    ./exec-on-client "cd /tmp; python produce-activity.py"
+    ./exec-on-client 0 "cd /tmp; python produce-activity.py"
 Note: use -u if piping output to _tee_ 
 
 ### Run memtier_benchmark (load generator) 
-    ./exec-on-client "cd /tmp; ./run_memtier_benchmark"
+    ./exec-on-client 0 "cd /tmp; ./run_memtier_benchmark"
 
 **If everything is OK at this point then your test platform is valid.**
 

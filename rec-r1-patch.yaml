@@ -17,8 +17,8 @@ spec:
     ----- LICENSE END -----
 spec:
   activeActive:
-    apiIngressUrl: api.r1.34.152.24.78.nip.io
-    dbIngressSuffix: -db.r1.34.152.24.78.nip.io
+    apiIngressUrl: api.r1.34.95.9.247.nip.io
+    dbIngressSuffix: -db.r1.34.95.9.247.nip.io
     ingressAnnotations:
       kubernetes.io/ingress.class: nginx
       nginx.ingress.kubernetes.io/backend-protocol: HTTPS

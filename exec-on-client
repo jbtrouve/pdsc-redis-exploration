@@ -1,5 +1,7 @@
 CLIENT_INST=$1
 shift
 
+[[ $CLIENT_INST = "" ]] && echo "Usage: $0 0|1|2" && exit 1
+
 ### . ./set-site-parameters 1 >/dev/null 2>&1
 kubectl exec -it redis-client-$CLIENT_INST -- bash -c "$*" 
