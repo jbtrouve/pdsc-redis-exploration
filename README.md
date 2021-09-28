@@ -11,9 +11,8 @@ Reference (given by Redis Solutions architect): https://github.com/quintonparker
     git clone https://github.com/quintonparker/redis-enterprise-k8s-docs.git -b aws-eks-active-active aws-eks-active-active
 
 ### Download Redis Operator
-    VERSION=$(curl --silent https://api.github.com/repos/RedisLabs/redis-enterprise-k8s-docs/releases/latest | grep tag_name | awk -F'"' '{print $4}')
-    echo $VERSION
-               v6.0.20-12
+    curl --silent https://api.github.com/repos/RedisLabs/redis-enterprise-k8s-docs/releases/latest | grep tag_name | awk -F'"' '{print $4}'
+    VERSION=v6.0.20-12
     curl --silent -O https://raw.githubusercontent.com/RedisLabs/redis-enterprise-k8s-docs/$VERSION/bundle.yaml
 ## Build region 1
 
@@ -110,4 +109,49 @@ Note: use -u if piping output to _tee_
     ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
     . ./set-site-parameters 2
     ./exec-on-server-node 1 rladmin cluster config cm_session_timeout_minutes 600
+
+## Prepare for upgrade tests
+Reference: https://docs.redis.com/latest/platforms/kubernetes/tasks/upgrading-with-operator
+
+### Identify latest version
+Visit this page to get the info on the latest versions : https://github.com/RedisLabs/redis-enterprise-k8s-docs/releases
+
+    Redis Enterprise = redislabs/operator:6.2.4-1
+    Redis Operator   = redislabs/redis:6.2.4-55
+    Services Rigger  = redislabs/k8s-controller:6.2.4-1
+
+### Download Redis Operator
+
+    cd upgrade
+    VERSION=$(curl --silent https://api.github.com/repos/RedisLabs/redis-enterprise-k8s-docs/releases/latest | grep tag_name | awk -F'"' '{print $4}')
+    echo $VERSION
+               v6.2.4-1
+    curl --silent -O https://raw.githubusercontent.com/RedisLabs/redis-enterprise-k8s-docs/$VERSION/bundle.yaml
+
+### Test upgrade once
+Note current version
+
+    . ./set-site-parameters 1
+    k get rec       # current version is 6.0.20-97
+
+Upgrade operator
+
+    cd upgrade
+    kubectl apply -f bundle.yaml
+    # Watch
+    kubectl rollout status deployment redis-enterprise-operator --namespace=redis
+
+Prepare operator for upgrade (replace Redis Enterprise Cluster version in CRD)
+
+    kubectl edit rec
+      # section redisEnterpriseImageSpec, attribute versionTag: replace 6.0.20-97 with 6.2.4-55
+      # save and exit
+
+Track upgrade
+
+    kubectl rollout status sts rec-r1
+
+
+
+
 
